@@ -6,6 +6,7 @@ public class Person
 {
     private int possition;
     private static string name;
+    private int id;
 
     public Person(int possition)
     {
