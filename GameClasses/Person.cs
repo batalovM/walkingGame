@@ -4,7 +4,7 @@ namespace walkingGame.GameClasses;
 
 public class Person
 {
-    private int possition;
+    private int possition;//pos y
     private static string name;
     private int id;
 
