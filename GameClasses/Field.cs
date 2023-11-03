@@ -16,7 +16,14 @@ public class Field
     
     private void ChangeStateOfCell(Dictionary<int, Cell> field, int key)
     {
+        if (field.ContainsKey(key))
+        {
+            // Создаем новый объект Cell
+            Cell newCell = new Cell();
         
+            // Заменяем параметр Cell в нужном ключе
+            field[key] = newCell;
+        }
     }
     
 }
