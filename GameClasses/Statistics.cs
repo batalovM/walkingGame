@@ -4,30 +4,30 @@ using System.Collections.Generic;
 
 public class Statistics
 {
-    private List<Player> players;
+    private List<Person> person;
 
-    public PlayerStatistics()
+    public PersonStatistics()
     {
-        players = new List<Player>();
+        persons = new List<Person>();
     }
 
-    public void AddPlayer(Player player)
+    public void AddPlayer(Person person)
     {
-        players.Add(player);
+        persons.Add(person);
         SortPlayers();
     }
 
-    public void SortPlayers()
+    public void SortPersons()
     {
-        players.Sort((p1, p2) => p2.Score.CompareTo(p1.Score));
+        persons.Sort((p1, p2) => p2.Score.CompareTo(p1.Score));
     }
 
     public void PrintStatistics()
     {
         Console.WriteLine("Player Statistics:");
-        for (int i = 0; i < players.Count; i++)
+        for (int i = 0; i < persons.Count; i++)
         {
-            Console.WriteLine($"{i + 1}. {players[i].Name} - {players[i].Score} points");
+            Console.WriteLine($"{i + 1}. {persons[i].Name} - {persons[i].Score} points");
         }
     }
 }
