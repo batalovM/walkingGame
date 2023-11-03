@@ -5,8 +5,10 @@ namespace walkingGame.GameClasses;
 public class Person
 {
     private int possition;//pos y
-    private static string name;
+    public string Name;
     private int id;
+    public int Score;
+    
 
     public Person(int possition)
     {
@@ -19,9 +21,5 @@ public class Person
         set => possition = value;
     }
 
-    public static string Name
-    {
-        get => name;
-        set => name = value ?? throw new ArgumentNullException(nameof(value));
-    }
+    
 }
