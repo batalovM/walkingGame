@@ -1,7 +1,7 @@
 ﻿namespace walkingGame.GameClasses;
 using System;
 using System.Collections.Generic;
-
+//Статистика
 public class Statistics
 {
     private List<Person> person = new();
