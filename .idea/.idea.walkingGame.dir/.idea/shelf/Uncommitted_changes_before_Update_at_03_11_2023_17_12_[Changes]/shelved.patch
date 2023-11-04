@@ -1,0 +1,50 @@
+Index: GameClasses/Statistics.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>namespace walkingGame.GameClasses;\r\nusing System;\r\nusing System.Collections.Generic;\r\n\r\npublic class Statistics\r\n{\r\n    private List<Person> person = new();\r\n\r\n    public void AddPlayer(Person p)\r\n    {\r\n        person.Add(p);\r\n        SortPersons();\r\n    }\r\n\r\n    public void SortPersons()\r\n    {\r\n        person.Sort((p1, p2) => p2.Score.CompareTo(p1.Score));\r\n    }\r\n\r\n    public void PrintStatistics()\r\n    {\r\n        Console.WriteLine(\"Player Statistics:\");\r\n        for (int i = 0; i < person.Count; i++)\r\n        {\r\n            Console.WriteLine($\"{i + 1}. {person[i].Name} - {person[i].Score} points\");\r\n        }\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/GameClasses/Statistics.cs b/GameClasses/Statistics.cs
+--- a/GameClasses/Statistics.cs	(revision 8fcb5f34ed14a6d98e8d7a068114f13f0a0eb4b4)
++++ b/GameClasses/Statistics.cs	(date 1699006031519)
+@@ -4,25 +4,31 @@
+ 
+ public class Statistics
+ {
+-    private List<Person> person = new();
++    private List<Person> person;
++
++    public PersonStatistics()
++    {
++        persons = new List<Person>();
++    }
+ 
+-    public void AddPlayer(Person p)
++    public void AddPlayer(Person person)
+     {
+-        person.Add(p);
+-        SortPersons();
++        persons.Add(person);
++        SortPlayers();
+     }
+ 
+     public void SortPersons()
+     {
+-        person.Sort((p1, p2) => p2.Score.CompareTo(p1.Score));
++        persons.Sort((p1, p2) => p2.Score.CompareTo(p1.Score));
+     }
+ 
+     public void PrintStatistics()
+     {
+         Console.WriteLine("Player Statistics:");
+-        for (int i = 0; i < person.Count; i++)
++        for (int i = 0; i < persons.Count; i++)
+         {
+-            Console.WriteLine($"{i + 1}. {person[i].Name} - {person[i].Score} points");
++            Console.WriteLine($"{i + 1}. {persons[i].Name} - {persons[i].Score} points");
+         }
+     }
+ }
++}
+\ No newline at end of file

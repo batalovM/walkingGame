@@ -4,9 +4,9 @@ namespace walkingGame.GameClasses;
 
 public class Field
 {
-    private Dictionary<int, Cell> field = new();
+    public Dictionary<int, Cell> field;
 
-    private void UpdateForGame(Dictionary<int, Cell> field)
+    public void UpdateForGame()
     {
         for (int i = 1; i < 101; i++)
         {
@@ -14,6 +14,11 @@ public class Field
         }
     }
     
+    public Field(Dictionary<int, Cell> field)
+    {
+        this.field = field;
+    }
+
     private void ChangeStateOfCell(Dictionary<int, Cell> field, int key)
     {
         if (field.ContainsKey(key))

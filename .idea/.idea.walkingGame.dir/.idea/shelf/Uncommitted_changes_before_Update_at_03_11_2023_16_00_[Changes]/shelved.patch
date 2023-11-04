@@ -1,0 +1,81 @@
+Index: GameClasses/Field.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>using System.Collections.Generic;\r\n\r\nnamespace walkingGame.GameClasses;\r\n\r\npublic class Field\r\n{\r\n    private Dictionary<int, Cell> field = new();\r\n\r\n    private void UpdateForGame(Dictionary<int, Cell> field)\r\n    {\r\n        for (int i = 1; i < 101; i++)\r\n        {\r\n            this.field.Add(i, new Cell());\r\n        }\r\n    }\r\n    \r\n    private void ChangeStateOfCell(Dictionary<int, Cell> field, int key)\r\n    {\r\n        \r\n    }\r\n    \r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/GameClasses/Field.cs b/GameClasses/Field.cs
+--- a/GameClasses/Field.cs	(revision 07167f9b327ad53f4314419922ce229524fdcb16)
++++ b/GameClasses/Field.cs	(date 1699001700177)
+@@ -1,22 +1,35 @@
+ using System.Collections.Generic;
++using System.Threading.Tasks;
+ 
+ namespace walkingGame.GameClasses;
+ 
+ public class Field
+ {
+-    private Dictionary<int, Cell> field = new();
++    public Dictionary<int, Cell> field = new();
+ 
+-    private void UpdateForGame(Dictionary<int, Cell> field)
++    public Field(Dictionary<int, Cell> field)
+     {
++        this.field = field;
++    }
++    public void UpdateForGame()
++    {
++        Dictionary<int, Cell> field = new();
+         for (int i = 1; i < 101; i++)
+         {
+-            this.field.Add(i, new Cell());
++            field.Add(i, new Cell());
+         }
+     }
+     
+-    private void ChangeStateOfCell(Dictionary<int, Cell> field, int key)
++    public void ChangeStateOfCell(int key)
+     {
++        if (field.ContainsKey(key))
++        {
++            // Создаем новый объект Cell
++            Cell newCell = new Cell();
+         
++            // Заменяем параметр Cell в нужном ключе
++            field[key] = newCell;
++        }
+     }
+     
+ }
+\ No newline at end of file
+Index: MainWindow.axaml.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>using Avalonia.Controls;\r\n\r\nnamespace walkingGame;\r\n\r\npublic partial class MainWindow : Window\r\n{\r\n    public MainWindow()\r\n    {\r\n        InitializeComponent();\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/MainWindow.axaml.cs b/MainWindow.axaml.cs
+--- a/MainWindow.axaml.cs	(revision 07167f9b327ad53f4314419922ce229524fdcb16)
++++ b/MainWindow.axaml.cs	(date 1699001829329)
+@@ -1,4 +1,7 @@
++using System.Collections.Generic;
++using System.Diagnostics;
+ using Avalonia.Controls;
++using walkingGame.GameClasses;
+ 
+ namespace walkingGame;
+ 
+@@ -7,5 +10,10 @@
+     public MainWindow()
+     {
+         InitializeComponent();
++        
++        Field field = new Field(new Dictionary<int, Cell>());
++        field.UpdateForGame();
++        field.ChangeStateOfCell(5);
++        
+     }
+ }
+\ No newline at end of file

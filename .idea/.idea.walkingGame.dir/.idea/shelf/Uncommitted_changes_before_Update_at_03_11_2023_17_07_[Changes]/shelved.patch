@@ -1,0 +1,36 @@
+Index: GameClasses/Statistics.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>namespace walkingGame.GameClasses;\r\nusing System;\r\nusing System.Collections.Generic;\r\n\r\npublic class Statistics\r\n{\r\n    private List<Person> person;\r\n\r\n    public PersonStatistics()\r\n    {\r\n        persons = new List<Person>();\r\n    }\r\n\r\n    public void AddPlayer(Person person)\r\n    {\r\n        persons.Add(person);\r\n        SortPlayers();\r\n    }\r\n\r\n    public void SortPersons()\r\n    {\r\n        persons.Sort((p1, p2) => p2.Score.CompareTo(p1.Score));\r\n    }\r\n\r\n    public void PrintStatistics()\r\n    {\r\n        Console.WriteLine(\"Player Statistics:\");\r\n        for (int i = 0; i < persons.Count; i++)\r\n        {\r\n            Console.WriteLine($\"{i + 1}. {persons[i].Name} - {persons[i].Score} points\");\r\n        }\r\n    }\r\n}\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/GameClasses/Statistics.cs b/GameClasses/Statistics.cs
+--- a/GameClasses/Statistics.cs	(revision 22a11c1de4b4f226ffdfe302bcfff46252524d08)
++++ b/GameClasses/Statistics.cs	(date 1699002648134)
+@@ -4,16 +4,11 @@
+ 
+ public class Statistics
+ {
+-    private List<Person> person;
+-
+-    public PersonStatistics()
+-    {
+-        persons = new List<Person>();
+-    }
++    private List<Person> person = new();
+ 
+-    public void AddPlayer(Person person)
++    public void AddPlayer(Person p)
+     {
+-        persons.Add(person);
++        person.Add(p);
+         SortPlayers();
+     }
+ 
+@@ -31,4 +26,3 @@
+         }
+     }
+ }
+-}
+\ No newline at end of file
