@@ -2,33 +2,32 @@
 
 namespace walkingGame.GameClasses;
 
-public class Field
+public class Field : Cell
 {
-    public Dictionary<int, Cell> field;
+    public List<Cell> field;
 
-    public void UpdateForGame()
+    public void UpdateForGame(int num)
     {
-        for (int i = 1; i < 101; i++)
+        for (int i = 1; i < num+1; i++)
         {
-            this.field.Add(i, new Cell());
+            field.Add(new Cell(i, StateOfCell.Base));
         }
     }
-    
-    public Field(Dictionary<int, Cell> field)
+
+
+    public Field(int number, StateOfCell state, List<Cell> field) : base(number, state)
     {
         this.field = field;
     }
-
-    private void ChangeStateOfCell(Dictionary<int, Cell> field, int key)
-    {
-        if (field.ContainsKey(key))
-        {
-            // Создаем новый объект Cell
-            Cell newCell = new Cell();
-        
-            // Заменяем параметр Cell в нужном ключе
-            field[key] = newCell;
-        }
-    }
     
+  
+    public void ChangeStateOfCell(List<Cell> field, int key, StateOfCell getStateOfCell)
+    {
+        // Создаем новый объект Cell
+        Cell newCell = new Cell(key, getStateOfCell);
+        // Заменяем параметр Cell в нужном ключе
+        field.Insert(key, newCell);
+        // Удаляем предыдущий элемент
+        field.RemoveAt(key-1);
+    }
 }

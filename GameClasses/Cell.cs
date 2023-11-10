@@ -2,16 +2,26 @@
 
 public class Cell
 {
-    public int Number { get; set; }
-
-    public Cell(int number)
+    public enum StateOfCell
     {
-        Number = number; // Клетка с номером
+        Skip,
+        Extra,
+        Lose,
+        Base
     }
+    public int Number { get; set; }
+    public StateOfCell state { get; set; }
 
-    public Cell()
+    public StateOfCell GetState()
     {
-        throw new System.NotImplementedException();
+        return state;
+    }
+    
+
+    public Cell(int number, StateOfCell state)
+    {
+        Number = number;
+        this.state = state;
     }
 
     public void SkipTurn()
