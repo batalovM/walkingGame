@@ -1,70 +1,227 @@
-<Window xmlns="https://github.com/avaloniaui"
+<Window FontSize="18" FontFamily="Times New Roman" Background="Azure" xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="walkingGame.MainWindow"
         Title="walkingGame">
-    <Canvas>
-        <Border Margin="10,10,0,0" Padding="10" BorderThickness="1" BorderBrush="Red" Background="AntiqueWhite" CornerRadius="10">
-        <TextBlock FontSize="48" Text="0"/></Border>
-        <Border Margin="70,10,0,0" Padding="10" BorderThickness="1" BorderBrush="Red" Background="AntiqueWhite" CornerRadius="10">
-        <TextBlock Text="1" FontSize="48"/></Border>
-        <Border Margin="120,10,0,0" Padding="10" BorderThickness="1" BorderBrush="Red" Background="AntiqueWhite" CornerRadius="10">
-        <TextBlock Text="2" FontSize="48"/></Border>
-        <Border Margin="180,10,0,0" Padding="10" BorderThickness="1" BorderBrush="Red" Background="AntiqueWhite" CornerRadius="10">
-        <TextBlock  Text="3" FontSize="48"/></Border>
-        <Border Margin="240,10,0,0" Padding="10" BorderThickness="1" BorderBrush="Red" Background="AntiqueWhite" CornerRadius="10">
-        <TextBlock  Text="4" FontSize="48"/></Border>
-        <Border Margin="300,10,0,0" Padding="10" BorderThickness="1" BorderBrush="Red" Background="AntiqueWhite" CornerRadius="10">
-        <TextBlock  Text="5" FontSize="48" /></Border>
-        <Border Margin="360,10,0,0" Padding="10" BorderThickness="1" BorderBrush="Red" Background="AntiqueWhite" CornerRadius="10">
-        <TextBlock  Text="6" FontSize="48" /></Border>
-        <Border Margin="420,10,0,0" Padding="10" BorderThickness="1" BorderBrush="Red" Background="AntiqueWhite" CornerRadius="10">
-        <TextBlock  Text="7" FontSize="48" /></Border>
-        <Border Margin="480,10,0,0" Padding="10" BorderThickness="1" BorderBrush="Red" Background="AntiqueWhite" CornerRadius="10">
-        <TextBlock  Text="8" FontSize="48" /></Border>
-        <Border Margin="540,10,0,0" Padding="10" BorderThickness="1" BorderBrush="Red" Background="AntiqueWhite" CornerRadius="10">
-        <TextBlock  Text="9" FontSize="48" /></Border>
-        <Border Margin="600,10,0,0" Padding="10" BorderThickness="1" BorderBrush="Red" Background="AntiqueWhite" CornerRadius="10">
-        <TextBlock  Text="10" FontSize="48" /></Border>
-        <Border Margin="690,10,0,0" Padding="10" BorderThickness="1" BorderBrush="Red" Background="AntiqueWhite" CornerRadius="10">
-        <TextBlock  Text="11" FontSize="48" /></Border>
-        <Border Margin="720,100,0,0" Padding="10" BorderThickness="1" BorderBrush="Red" Background="AntiqueWhite" CornerRadius="10">
-        <TextBlock Text="12" FontSize="48" /></Border>
-        <Border Margin="630,110,0,0" Padding="10" BorderThickness="1" BorderBrush="Red" Background="AntiqueWhite" CornerRadius="10">
-            <TextBlock  Text="13" FontSize="48" /></Border>
-        <Border Margin="550,120,0,0" Padding="10" BorderThickness="1" BorderBrush="Red" Background="AntiqueWhite" CornerRadius="10">
-            <TextBlock  Text="14" FontSize="48" /></Border>
-        <Border Margin="470,130,0,0" Padding="10" BorderThickness="1" BorderBrush="Red" Background="AntiqueWhite" CornerRadius="10">
-            <TextBlock  Text="15" FontSize="48" /></Border>
-        <Border Margin="390,140,0,0" Padding="10" BorderThickness="1" BorderBrush="Red" Background="AntiqueWhite" CornerRadius="10">
-            <TextBlock  Text="16" FontSize="48" /></Border>
-        <Border Margin="310,140,0,0" Padding="10" BorderThickness="1" BorderBrush="Red" Background="AntiqueWhite" CornerRadius="10">
-            <TextBlock  Text="17" FontSize="48"/></Border>
-        <Border Margin="230,140,0,0" Padding="10" BorderThickness="1" BorderBrush="Red" Background="AntiqueWhite" CornerRadius="10">
-            <TextBlock  Text="18" FontSize="48" /></Border>
-        <Border Margin="150,140,0,0" Padding="10" BorderThickness="1" BorderBrush="Red" Background="AntiqueWhite" CornerRadius="10">
-            <TextBlock  Text="19" FontSize="48" /></Border>
-        <Border Margin="50,140,0,0" Padding="10" BorderThickness="1" BorderBrush="Red" Background="AntiqueWhite" CornerRadius="10">
-            <TextBlock  Text="20" FontSize="48" /></Border>
-        <Border Margin="10,10,0,0" Padding="10" BorderThickness="1" BorderBrush="Red" Background="AntiqueWhite" CornerRadius="10">
-        <TextBlock FontSize="48" Text="0"/></Border>
-        <Border Margin="20,240,0,0" Padding="10" BorderThickness="1" BorderBrush="Red" Background="AntiqueWhite" CornerRadius="10">
-        <TextBlock Text="21" FontSize="48"/></Border>
-        <Border Margin="110,240,0,0" Padding="10" BorderThickness="1" BorderBrush="Red" Background="AntiqueWhite" CornerRadius="10">
-        <TextBlock Text="22" FontSize="48"/></Border>
-        <Border Margin="200,240,0,0" Padding="10" BorderThickness="1" BorderBrush="Red" Background="AntiqueWhite" CornerRadius="10">
-        <TextBlock  Text="23" FontSize="48"/></Border>
-        <Border Margin="300,240,0,0" Padding="10" BorderThickness="1" BorderBrush="Red" Background="AntiqueWhite" CornerRadius="10">
-        <TextBlock  Text="24" FontSize="48"/></Border>
-        <Border Margin="400,240,0,0" Padding="10" BorderThickness="1" BorderBrush="Red" Background="AntiqueWhite" CornerRadius="10">
-        <TextBlock  Text="25" FontSize="48" /></Border>
-        <Border Margin="500,240,0,0" Padding="10" BorderThickness="1" BorderBrush="Red" Background="AntiqueWhite" CornerRadius="10">
-        <TextBlock  Text="26" FontSize="48" /></Border>
-        <Border Margin="600,240,0,0" Padding="10" BorderThickness="1" BorderBrush="Red" Background="AntiqueWhite" CornerRadius="10">
-        <TextBlock  Text="27" FontSize="48" /></Border>
-        <Border Margin="690,240,0,0" Padding="10" BorderThickness="1" BorderBrush="Red" Background="AntiqueWhite" CornerRadius="10">
-            <TextBlock  Text="Финиш" FontSize="36" /></Border>
-    </Canvas>
+        
+        <Grid  RowDefinitions="*, 6*, *">
+                <Grid  Grid.Row="0" ColumnDefinitions="*, *"  Background="DarkOliveGreen">
+                        <Grid Grid.Column="0">
+                                <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center">
+                                        Сейчас ходит:
+                                </TextBlock>
+                        </Grid>
+                        <Grid Grid.Column="1">
+                                <TextBlock Margin="10"  HorizontalAlignment="Left" VerticalAlignment="Center" >
+                                        ss
+                                </TextBlock>
+                        </Grid>
+                        
+                        
+                </Grid>
+                
+                <Grid Grid.Row="1"  Background="Gray" RowDefinitions="*, *, * ,*">
+                        <Grid Grid.Row="0" ColumnDefinitions="*, *, *, *, *, *, * , *">
+                               <Grid Grid.Column="0">
+                                       <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
+                                               <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">1</TextBlock>
+                                       </Border>
+                               </Grid>
+                                <Grid Grid.Column="1">
+                                        <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
+                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">2</TextBlock>
+                                        </Border>
+                                </Grid>
+                                <Grid Grid.Column="2">
+                                        <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
+                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">3</TextBlock>
+                                        </Border>
+                                </Grid>
+                                <Grid Grid.Column="3">
+                                        <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
+                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">4</TextBlock>
+                                        </Border>
+                                </Grid>
+                                <Grid Grid.Column="4">
+                                        <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
+                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">5</TextBlock>
+                                        </Border>
+                                </Grid>
+                                <Grid Grid.Column="5">
+                                        <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
+                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">6</TextBlock>
+                                        </Border>
+                                </Grid>
+                                <Grid Grid.Column="6">
+                                        <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
+                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">7</TextBlock>
+                                        </Border>
+                                </Grid>
+                                <Grid Grid.Column="7">
+                                        <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
+                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">8</TextBlock>
+                                        </Border>
+                                </Grid>
+                        </Grid>
+                        <Grid Grid.Row="1" ColumnDefinitions="*, *, *, *, *, *, * , *">
+                               <Grid Grid.Column="0">
+                                       <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
+                                               <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">9</TextBlock>
+                                       </Border>
+                               </Grid>
+                                <Grid Grid.Column="1">
+                                        <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
+                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">10</TextBlock>
+                                        </Border>
+                                </Grid>
+                                <Grid Grid.Column="2">
+                                        <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
+                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">11</TextBlock>
+                                        </Border>
+                                </Grid>
+                                <Grid Grid.Column="3">
+                                        <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
+                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">12</TextBlock>
+                                        </Border>
+                                </Grid>
+                                <Grid Grid.Column="4">
+                                        <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
+                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">13</TextBlock>
+                                        </Border>
+                                </Grid>
+                                <Grid Grid.Column="5">
+                                        <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
+                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">14</TextBlock>
+                                        </Border>
+                                </Grid>
+                                <Grid Grid.Column="6">
+                                        <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
+                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">15</TextBlock>
+                                        </Border>
+                                </Grid>
+                                <Grid Grid.Column="7">
+                                        <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
+                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">16</TextBlock>
+                                        </Border>
+                                </Grid>
+                        </Grid>
+                        <Grid Grid.Row="2" ColumnDefinitions="*, *, *, *, *, *, * , *">
+                               <Grid Grid.Column="0">
+                                       <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
+                                               <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">17</TextBlock>
+                                       </Border>
+                               </Grid>
+                                <Grid Grid.Column="1">
+                                        <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
+                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">18</TextBlock>
+                                        </Border>
+                                </Grid>
+                                <Grid Grid.Column="2">
+                                        <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
+                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">19</TextBlock>
+                                        </Border>
+                                </Grid>
+                                <Grid Grid.Column="3">
+                                        <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
+                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">20</TextBlock>
+                                        </Border>
+                                </Grid>
+                                <Grid Grid.Column="4">
+                                        <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
+                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">21</TextBlock>
+                                        </Border>
+                                </Grid>
+                                <Grid Grid.Column="5">
+                                        <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
+                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">22</TextBlock>
+                                        </Border>
+                                </Grid>
+                                <Grid Grid.Column="6">
+                                        <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
+                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">23</TextBlock>
+                                        </Border>
+                                </Grid>
+                                <Grid Grid.Column="7">
+                                        <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
+                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">24</TextBlock>
+                                        </Border>
+                                </Grid>
+                        </Grid>
+                        <Grid Grid.Row="3" ColumnDefinitions="*, *, *, *, *, *, * , *">
+                               <Grid Grid.Column="0">
+                                       <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
+                                               <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">25</TextBlock>
+                                       </Border>
+                               </Grid>
+                                <Grid Grid.Column="1">
+                                        <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
+                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">26</TextBlock>
+                                        </Border>
+                                </Grid>
+                                <Grid Grid.Column="2">
+                                        <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
+                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">27</TextBlock>
+                                        </Border>
+                                </Grid>
+                                <Grid Grid.Column="3">
+                                        <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
+                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">28</TextBlock>
+                                        </Border>
+                                </Grid>
+                                <Grid Grid.Column="4">
+                                        <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
+                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">29</TextBlock>
+                                        </Border>
+                                </Grid>
+                                <Grid Grid.Column="5">
+                                        <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
+                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">30</TextBlock>
+                                        </Border>
+                                </Grid>
+                                <Grid Grid.Column="6">
+                                        <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
+                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">31</TextBlock>
+                                        </Border>
+                                </Grid>
+                                <Grid Grid.Column="7">
+                                        <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
+                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">32</TextBlock>
+                                        </Border>
+                                </Grid>
+                        </Grid>
+                </Grid> 
+                
+                <Grid Grid.Row="2"  Background="DarkOliveGreen" ColumnDefinitions="*, * , 3*">
+                        <Grid Grid.Column="0" ColumnDefinitions="*,*">
+                                <Grid Grid.Column="0" >
+                                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Right">
+                                                Игрок 1:
+                                        </TextBlock>
+                                </Grid>
+                                <Grid Grid.Column="1">
+                                        <TextBlock Margin="10 0 0 0 " VerticalAlignment="Center" HorizontalAlignment="Left">s</TextBlock>
+                                </Grid>
+                                
+                        </Grid>
+                        <Grid Grid.Column="1" ColumnDefinitions="*,*">
+                                <Grid Grid.Column="0" >
+                                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Right">
+                                                Игрок 2:
+                                        </TextBlock>
+                                </Grid>
+                                <Grid Grid.Column="1">
+                                        <TextBlock Margin="10 0 0 0 " VerticalAlignment="Center" HorizontalAlignment="Left">s</TextBlock>
+                                </Grid>
+                        </Grid>
+                        <Grid  Grid.Column="2">
+                                <Button MinHeight="30" MaxHeight="90" MinWidth="100" MaxWidth="600" VerticalAlignment="Center" Margin="0 0 40 0" HorizontalAlignment="Right">Сделать ход</Button>
+                        </Grid>
+                </Grid>
+                
+        </Grid>
+        
+        
 </Window>
+

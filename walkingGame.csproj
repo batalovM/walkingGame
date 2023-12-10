@@ -26,4 +26,9 @@
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
+
+
+  <ItemGroup>
+    <AvaloniaXaml Remove="MainWindow.axaml" />
+  </ItemGroup>
 </Project>
