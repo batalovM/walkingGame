@@ -18,5 +18,5 @@ build_property.ProjectDir = C:\Users\batal\RiderProjects\walkingGame\
 [C:/Users/batal/RiderProjects/walkingGame/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/batal/RiderProjects/walkingGame/MainWindow.axaml]
+[C:/Users/batal/RiderProjects/walkingGame/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

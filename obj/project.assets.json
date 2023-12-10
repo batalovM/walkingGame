@@ -336,6 +336,22 @@
           }
         }
       },
+      "DynamicData/8.0.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/DynamicData.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/DynamicData.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "HarfBuzzSharp/2.8.2.3": {
         "type": "package",
         "dependencies": {
@@ -755,6 +771,23 @@
           }
         }
       },
+      "ReactiveUI/19.5.1": {
+        "type": "package",
+        "dependencies": {
+          "DynamicData": "8.0.2",
+          "Splat": "14.7.1"
+        },
+        "compile": {
+          "lib/net6.0/ReactiveUI.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/ReactiveUI.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "SkiaSharp/2.88.3": {
         "type": "package",
         "dependencies": {
@@ -850,6 +883,19 @@
           "runtimes/win-x86/native/libSkiaSharp.dll": {
             "assetType": "native",
             "rid": "win-x86"
+          }
+        }
+      },
+      "Splat/14.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Splat.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Splat.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -1083,6 +1129,22 @@
         },
         "runtime": {
           "lib/netstandard1.3/System.ObjectModel.dll": {}
+        }
+      },
+      "System.Reactive/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Reflection/4.3.0": {
@@ -1805,6 +1867,28 @@
         "lib/netstandard2.0/Avalonia.X11.xml"
       ]
     },
+    "DynamicData/8.0.2": {
+      "sha512": "zGKeUZcaW4Nxx8T2OyrkFnb+sIc6cnfCxQr/a/5Sm+Idg9rRJruHS8KFKVUIXNxDC0yQZYwO+22XBumMznA8sg==",
+      "type": "package",
+      "path": "dynamicdata/8.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE/LICENSE",
+        "README.md",
+        "dynamicdata.8.0.2.nupkg.sha512",
+        "dynamicdata.nuspec",
+        "lib/net462/DynamicData.dll",
+        "lib/net462/DynamicData.xml",
+        "lib/net6.0/DynamicData.dll",
+        "lib/net6.0/DynamicData.xml",
+        "lib/net7.0/DynamicData.dll",
+        "lib/net7.0/DynamicData.xml",
+        "lib/netstandard2.0/DynamicData.dll",
+        "lib/netstandard2.0/DynamicData.xml",
+        "logo.png"
+      ]
+    },
     "HarfBuzzSharp/2.8.2.3": {
       "sha512": "8MwXm9J4dXHuTdzPo29nHgDbt4+6P+RrPrH/qrxcERf29cpLlFbjvP3eFPwHmdUrl4KL2SHEZi2ZuQ5ndeIL1w==",
       "type": "package",
@@ -2385,6 +2469,65 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "ReactiveUI/19.5.1": {
+      "sha512": "Ye0k68DnpS/h9BagGba2KEGsps//gcY4z7ZGr/OiWmXMJZn0z0/io4NB9tbnGFrT5sD+npo0fELJ6sambGVEFQ==",
+      "type": "package",
+      "path": "reactiveui/19.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE/LICENSE",
+        "README.md",
+        "lib/monoandroid12.0/ReactiveUI.dll",
+        "lib/monoandroid12.0/ReactiveUI.pdb",
+        "lib/monoandroid12.0/ReactiveUI.xml",
+        "lib/monoandroid12.1/ReactiveUI.dll",
+        "lib/monoandroid12.1/ReactiveUI.pdb",
+        "lib/monoandroid12.1/ReactiveUI.xml",
+        "lib/monoandroid13.0/ReactiveUI.dll",
+        "lib/monoandroid13.0/ReactiveUI.pdb",
+        "lib/monoandroid13.0/ReactiveUI.xml",
+        "lib/net462/ReactiveUI.dll",
+        "lib/net462/ReactiveUI.xml",
+        "lib/net472/ReactiveUI.dll",
+        "lib/net472/ReactiveUI.xml",
+        "lib/net6.0-windows10.0.17763/ReactiveUI.dll",
+        "lib/net6.0-windows10.0.17763/ReactiveUI.xml",
+        "lib/net6.0-windows10.0.19041/ReactiveUI.dll",
+        "lib/net6.0-windows10.0.19041/ReactiveUI.xml",
+        "lib/net6.0/ReactiveUI.dll",
+        "lib/net6.0/ReactiveUI.xml",
+        "lib/net7.0-android33.0/ReactiveUI.dll",
+        "lib/net7.0-android33.0/ReactiveUI.xml",
+        "lib/net7.0-ios16.1/ReactiveUI.dll",
+        "lib/net7.0-ios16.1/ReactiveUI.xml",
+        "lib/net7.0-maccatalyst16.1/ReactiveUI.dll",
+        "lib/net7.0-maccatalyst16.1/ReactiveUI.xml",
+        "lib/net7.0-macos13.0/ReactiveUI.dll",
+        "lib/net7.0-macos13.0/ReactiveUI.xml",
+        "lib/net7.0-tvos16.1/ReactiveUI.dll",
+        "lib/net7.0-tvos16.1/ReactiveUI.xml",
+        "lib/net7.0-windows10.0.17763/ReactiveUI.dll",
+        "lib/net7.0-windows10.0.17763/ReactiveUI.xml",
+        "lib/net7.0-windows10.0.19041/ReactiveUI.dll",
+        "lib/net7.0-windows10.0.19041/ReactiveUI.xml",
+        "lib/net7.0/ReactiveUI.dll",
+        "lib/net7.0/ReactiveUI.xml",
+        "lib/netstandard2.0/ReactiveUI.dll",
+        "lib/netstandard2.0/ReactiveUI.xml",
+        "lib/tizen40/ReactiveUI.dll",
+        "lib/tizen40/ReactiveUI.xml",
+        "lib/xamarinios10/ReactiveUI.dll",
+        "lib/xamarinios10/ReactiveUI.xml",
+        "lib/xamarinmac20/ReactiveUI.dll",
+        "lib/xamarinmac20/ReactiveUI.xml",
+        "lib/xamarintvos10/ReactiveUI.dll",
+        "lib/xamarintvos10/ReactiveUI.xml",
+        "logo.png",
+        "reactiveui.19.5.1.nupkg.sha512",
+        "reactiveui.nuspec"
+      ]
+    },
     "SkiaSharp/2.88.3": {
       "sha512": "GG8X3EdfwyBfwjl639UIiOVOKEdeoqDgYrz0P1MUCnefXt9cofN+AK8YB/v1+5cLMr03ieWCQdDmPqnFIzSxZw==",
       "type": "package",
@@ -2554,6 +2697,24 @@
         "runtimes/win-x86/native/libSkiaSharp.dll",
         "skiasharp.nativeassets.win32.2.88.3.nupkg.sha512",
         "skiasharp.nativeassets.win32.nuspec"
+      ]
+    },
+    "Splat/14.7.1": {
+      "sha512": "nWalgf4RuopEICZhMpwlFPz0MJaBYrusIbP/GxpE6x19PZnlLW4RZs84FYxlCfXLKTMsImHKHv2YoOQmM8/bPA==",
+      "type": "package",
+      "path": "splat/14.7.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE/LICENSE",
+        "lib/net6.0/Splat.dll",
+        "lib/net6.0/Splat.xml",
+        "lib/net7.0/Splat.dll",
+        "lib/net7.0/Splat.xml",
+        "lib/netstandard2.0/Splat.dll",
+        "lib/netstandard2.0/Splat.xml",
+        "splat.14.7.1.nupkg.sha512",
+        "splat.nuspec"
       ]
     },
     "System.Collections/4.3.0": {
@@ -3385,6 +3546,34 @@
         "ref/xamarinwatchos10/_._",
         "system.objectmodel.4.3.0.nupkg.sha512",
         "system.objectmodel.nuspec"
+      ]
+    },
+    "System.Reactive/6.0.0": {
+      "sha512": "31kfaW4ZupZzPsI5PVe77VhnvFF55qgma7KZr/E0iFTs6fmdhhG8j0mgEx620iLTey1EynOkEfnyTjtNEpJzGw==",
+      "type": "package",
+      "path": "system.reactive/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net6.0-windows10.0.19041/_._",
+        "build/net6.0/_._",
+        "buildTransitive/net6.0-windows10.0.19041/_._",
+        "buildTransitive/net6.0/_._",
+        "icon.png",
+        "lib/net472/System.Reactive.dll",
+        "lib/net472/System.Reactive.xml",
+        "lib/net6.0-windows10.0.19041/System.Reactive.dll",
+        "lib/net6.0-windows10.0.19041/System.Reactive.xml",
+        "lib/net6.0/System.Reactive.dll",
+        "lib/net6.0/System.Reactive.xml",
+        "lib/netstandard2.0/System.Reactive.dll",
+        "lib/netstandard2.0/System.Reactive.xml",
+        "lib/uap10.0.18362/System.Reactive.dll",
+        "lib/uap10.0.18362/System.Reactive.pri",
+        "lib/uap10.0.18362/System.Reactive.xml",
+        "readme.md",
+        "system.reactive.6.0.0.nupkg.sha512",
+        "system.reactive.nuspec"
       ]
     },
     "System.Reflection/4.3.0": {
@@ -4477,7 +4666,8 @@
       "Avalonia.Desktop >= 11.0.2",
       "Avalonia.Diagnostics >= 11.0.2",
       "Avalonia.Fonts.Inter >= 11.0.2",
-      "Avalonia.Themes.Fluent >= 11.0.2"
+      "Avalonia.Themes.Fluent >= 11.0.2",
+      "ReactiveUI >= 19.5.1"
     ]
   },
   "packageFolders": {
@@ -4536,6 +4726,10 @@
           "Avalonia.Themes.Fluent": {
             "target": "Package",
             "version": "[11.0.2, )"
+          },
+          "ReactiveUI": {
+            "target": "Package",
+            "version": "[19.5.1, )"
           }
         },
         "imports": [

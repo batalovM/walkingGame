@@ -129,3 +129,7 @@ C:\Users\batal\RiderProjects\walkingGame\obj\Debug\net6.0\walkingGame.pdb
 C:\Users\batal\RiderProjects\walkingGame\obj\Debug\net6.0\walkingGame.csproj.CopyComplete
 C:\Users\batal\RiderProjects\walkingGame\obj\Debug\net6.0\walkingGame.genruntimeconfig.cache
 C:\Users\batal\RiderProjects\walkingGame\obj\Debug\net6.0\ref\walkingGame.dll
+C:\Users\batal\RiderProjects\walkingGame\bin\Debug\net6.0\DynamicData.dll
+C:\Users\batal\RiderProjects\walkingGame\bin\Debug\net6.0\ReactiveUI.dll
+C:\Users\batal\RiderProjects\walkingGame\bin\Debug\net6.0\Splat.dll
+C:\Users\batal\RiderProjects\walkingGame\bin\Debug\net6.0\System.Reactive.dll
