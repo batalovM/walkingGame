@@ -1,4 +1,4 @@
-<Window FontSize="18" FontFamily="Times New Roman" Background="Azure" xmlns="https://github.com/avaloniaui"
+<Window Foreground="DarkGoldenrod" FontSize="18" FontFamily="Times New Roman" Background="Azure" xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -25,8 +25,11 @@
                 <Grid Grid.Row="1"  Background="Gray" RowDefinitions="*, *, * ,*">
                         <Grid Grid.Row="0" ColumnDefinitions="*, *, *, *, *, *, * , *">
                                <Grid Grid.Column="0">
+                                       <Image VerticalAlignment="Top" HorizontalAlignment="Left" ZIndex="3" Width="60" Height="60" Source="C:\Users\sasha\RiderProjects\walkingGame\Assets\copy.png"></Image>
+                                       <Image VerticalAlignment="Bottom" HorizontalAlignment="Right" ZIndex="3" Width="60" Height="60" Source="C:\Users\sasha\RiderProjects\walkingGame\Assets\copy_copy.png"></Image>
                                        <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
-                                               <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">1</TextBlock>
+                                               
+                                               <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">Старт</TextBlock>
                                        </Border>
                                </Grid>
                                 <Grid Grid.Column="1">
@@ -68,42 +71,42 @@
                         <Grid Grid.Row="1" ColumnDefinitions="*, *, *, *, *, *, * , *">
                                <Grid Grid.Column="0">
                                        <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
-                                               <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">9</TextBlock>
+                                               <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">16</TextBlock>
                                        </Border>
                                </Grid>
                                 <Grid Grid.Column="1">
                                         <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
-                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">10</TextBlock>
+                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">15</TextBlock>
                                         </Border>
                                 </Grid>
                                 <Grid Grid.Column="2">
                                         <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
-                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">11</TextBlock>
+                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">14</TextBlock>
                                         </Border>
                                 </Grid>
                                 <Grid Grid.Column="3">
                                         <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
-                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">12</TextBlock>
+                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">13</TextBlock>
                                         </Border>
                                 </Grid>
                                 <Grid Grid.Column="4">
                                         <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
-                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">13</TextBlock>
+                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">12</TextBlock>
                                         </Border>
                                 </Grid>
                                 <Grid Grid.Column="5">
                                         <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
-                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">14</TextBlock>
+                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">11</TextBlock>
                                         </Border>
                                 </Grid>
                                 <Grid Grid.Column="6">
                                         <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
-                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">15</TextBlock>
+                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">10</TextBlock>
                                         </Border>
                                 </Grid>
                                 <Grid Grid.Column="7">
                                         <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
-                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">16</TextBlock>
+                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">9</TextBlock>
                                         </Border>
                                 </Grid>
                         </Grid>
@@ -152,50 +155,52 @@
                         <Grid Grid.Row="3" ColumnDefinitions="*, *, *, *, *, *, * , *">
                                <Grid Grid.Column="0">
                                        <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
-                                               <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">25</TextBlock>
+                                               <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">Финиш</TextBlock>
                                        </Border>
                                </Grid>
                                 <Grid Grid.Column="1">
                                         <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
-                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">26</TextBlock>
+                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">31</TextBlock>
                                         </Border>
                                 </Grid>
                                 <Grid Grid.Column="2">
                                         <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
-                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">27</TextBlock>
+                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">30</TextBlock>
                                         </Border>
                                 </Grid>
                                 <Grid Grid.Column="3">
                                         <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
-                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">28</TextBlock>
+                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">29</TextBlock>
                                         </Border>
                                 </Grid>
                                 <Grid Grid.Column="4">
                                         <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
-                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">29</TextBlock>
+                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">28</TextBlock>
                                         </Border>
                                 </Grid>
                                 <Grid Grid.Column="5">
                                         <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
-                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">30</TextBlock>
+                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">27</TextBlock>
                                         </Border>
                                 </Grid>
                                 <Grid Grid.Column="6">
                                         <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
-                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">31</TextBlock>
+                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">26</TextBlock>
                                         </Border>
                                 </Grid>
                                 <Grid Grid.Column="7">
                                         <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
-                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">32</TextBlock>
+                                                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">25</TextBlock>
                                         </Border>
                                 </Grid>
                         </Grid>
                 </Grid> 
                 
-                <Grid Grid.Row="2"  Background="DarkOliveGreen" ColumnDefinitions="*, * , 3*">
+                <Grid Grid.Row="2"  Background="DarkOliveGreen" ColumnDefinitions="*, * , 1.5*">
                         <Grid Grid.Column="0" ColumnDefinitions="*,*">
                                 <Grid Grid.Column="0" >
+                                        <Image Margin="10 0 0 0" VerticalAlignment="Center" HorizontalAlignment="Left" ZIndex="3" Width="60" Height="60" Source="C:\Users\sasha\RiderProjects\walkingGame\Assets\copy.png"></Image>
+                                        
                                         <TextBlock VerticalAlignment="Center" HorizontalAlignment="Right">
                                                 Игрок 1:
                                         </TextBlock>
@@ -207,6 +212,7 @@
                         </Grid>
                         <Grid Grid.Column="1" ColumnDefinitions="*,*">
                                 <Grid Grid.Column="0" >
+                                        <Image Margin="10 0 0 0"   VerticalAlignment="Center" HorizontalAlignment="Left" ZIndex="3" Width="60" Height="60" Source="C:\Users\sasha\RiderProjects\walkingGame\Assets\copy_copy.png"></Image>
                                         <TextBlock VerticalAlignment="Center" HorizontalAlignment="Right">
                                                 Игрок 2:
                                         </TextBlock>
