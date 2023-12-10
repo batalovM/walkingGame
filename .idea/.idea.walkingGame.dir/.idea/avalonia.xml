@@ -3,7 +3,6 @@
   <component name="AvaloniaProject">
     <option name="projectPerEditor">
       <map>
-        <entry key="App.axaml" value="walkingGame.csproj" />
         <entry key="MainWindow.axaml" value="walkingGame.csproj" />
       </map>
     </option>

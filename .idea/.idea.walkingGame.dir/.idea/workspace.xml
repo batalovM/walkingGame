@@ -7,28 +7,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6fbc6164-c89e-49d9-a0e0-b64aa67de73e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.walkingGame.dir/.idea/shelf/Uncommitted_changes_before_Update_at_03_11_2023_15_37_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.walkingGame.dir/.idea/shelf/Uncommitted_changes_before_Update_at_03_11_2023_15_37__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.walkingGame.dir/.idea/shelf/Uncommitted_changes_before_Update_at_03_11_2023_15_54_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.walkingGame.dir/.idea/shelf/Uncommitted_changes_before_Update_at_03_11_2023_15_54__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.walkingGame.dir/.idea/shelf/Uncommitted_changes_before_Update_at_03_11_2023_16_00_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.walkingGame.dir/.idea/shelf/Uncommitted_changes_before_Update_at_03_11_2023_16_00__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.walkingGame.dir/.idea/shelf/Uncommitted_changes_before_Update_at_03_11_2023_17_07_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.walkingGame.dir/.idea/shelf/Uncommitted_changes_before_Update_at_03_11_2023_17_07__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.walkingGame.dir/.idea/shelf/Uncommitted_changes_before_Update_at_03_11_2023_17_12_[Changes]/Resources.Inputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.walkingGame.dir/.idea/shelf/Uncommitted_changes_before_Update_at_03_11_2023_17_12_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.walkingGame.dir/.idea/shelf/Uncommitted_changes_before_Update_at_03_11_2023_17_12__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.walkingGame.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.walkingGame.dir/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="6fbc6164-c89e-49d9-a0e0-b64aa67de73e" name="Changes" comment="add document">
+      <change beforePath="$PROJECT_DIR$/GameClasses/Field.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameClasses/Field.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainWindow.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.axaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/walkingGame.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/walkingGame.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/walkingGame.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/walkingGame.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainWindow.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.axaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Avalonia/Resources.Inputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/Avalonia/Resources.Inputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Avalonia/original.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/Avalonia/original.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Avalonia/original.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/Avalonia/original.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Avalonia/original.ref.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/Avalonia/original.ref.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Avalonia/resources" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/Avalonia/resources" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ref/walkingGame.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ref/walkingGame.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/refint/walkingGame.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/refint/walkingGame.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/walkingGame.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/walkingGame.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/walkingGame.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/walkingGame.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/walkingGame.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/walkingGame.pdb" afterDir="false" />
     </list>
@@ -41,8 +31,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://C:/Users/batal/RiderProjects/walkingGame/GameClasses/Cell.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/batal/RiderProjects/walkingGame/GameClasses/Field.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/batal/RiderProjects/walkingGame/GameClasses/Statistics.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -59,29 +48,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\batal\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\batal\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\batal\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\batal\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache",
+      "C:\\Users\\batal\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache",
+      "C:\\Users\\batal\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="walkingGame" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -112,14 +101,7 @@
       <updated>1698767634644</updated>
       <workItem from="1698767635216" duration="667000" />
       <workItem from="1698920386274" duration="21613000" />
-      <workItem from="1699006214638" duration="4798000" />
-      <workItem from="1699090481633" duration="1716000" />
-      <workItem from="1699242113641" duration="3583000" />
-      <workItem from="1699597218922" duration="2268000" />
-      <workItem from="1699784552178" duration="381000" />
-      <workItem from="1700463377698" duration="22000" />
-      <workItem from="1702195982533" duration="49000" />
-      <workItem from="1702203587566" duration="2658000" />
+      <workItem from="1699006214638" duration="2262000" />
     </task>
     <task id="LOCAL-00001" summary="Добавление классов для разработки">
       <option name="closed" value="true" />
@@ -169,23 +151,7 @@
       <option name="project" value="LOCAL" />
       <updated>1699006677834</updated>
     </task>
-    <task id="LOCAL-00007" summary="update Field">
-      <option name="closed" value="true" />
-      <created>1699075989320</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1699075989320</updated>
-    </task>
-    <task id="LOCAL-00008" summary="update Field and Cell classes&#10;&#10;update ChangeStateOfCell&#10;remove some methods">
-      <option name="closed" value="true" />
-      <created>1699602068058</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1699602068058</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,8 +178,6 @@
     <MESSAGE value=" update Field class" />
     <MESSAGE value="update" />
     <MESSAGE value="add document" />
-    <MESSAGE value="update Field" />
-    <MESSAGE value="update Field and Cell classes&#10;&#10;update ChangeStateOfCell&#10;remove some methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="update Field and Cell classes&#10;&#10;update ChangeStateOfCell&#10;remove some methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="add document" />
   </component>
 </project>
