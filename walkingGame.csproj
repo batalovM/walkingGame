@@ -31,4 +31,9 @@
   <ItemGroup>
     <AvaloniaXaml Remove="MainWindow.axaml" />
   </ItemGroup>
+
+
+  <ItemGroup>
+    <Folder Include="Assets\" />
+  </ItemGroup>
 </Project>
