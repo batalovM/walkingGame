@@ -12,6 +12,7 @@
           "Avalonia.Desktop": "11.0.2",
           "Avalonia.Diagnostics": "11.0.2",
           "Avalonia.Fonts.Inter": "11.0.2",
+          "Avalonia.ReactiveUI": "11.0.2",
           "Avalonia.Themes.Fluent": "11.0.2",
           "ReactiveUI": "19.5.1"
         },
@@ -182,6 +183,19 @@
             "rid": "osx",
             "assetType": "native",
             "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Avalonia.ReactiveUI/11.0.2": {
+        "dependencies": {
+          "Avalonia": "11.0.2",
+          "ReactiveUI": "19.5.1",
+          "System.Reactive": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Avalonia.ReactiveUI.dll": {
+            "assemblyVersion": "11.0.2.0",
+            "fileVersion": "11.0.2.0"
           }
         }
       },
@@ -1032,6 +1046,13 @@
       "sha512": "sha512-Rb/1OnGEBls4U7txB5lLDw58x30tSGdEYf6WV5RliIRqQ4YeD/b8g87f6kwYAmp8Wuyq5CAuIGrn+Amr0KGJCA==",
       "path": "avalonia.native/11.0.2",
       "hashPath": "avalonia.native.11.0.2.nupkg.sha512"
+    },
+    "Avalonia.ReactiveUI/11.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LScjxo5TrdfwJqrPvcgn7bnrKu7dbJG5EJQaXRp/eg5q+Kw0RFJmp/hJeOor+Pzp09cYWPh2YzpqAfPFIP5ORw==",
+      "path": "avalonia.reactiveui/11.0.2",
+      "hashPath": "avalonia.reactiveui.11.0.2.nupkg.sha512"
     },
     "Avalonia.Remote.Protocol/11.0.2": {
       "type": "package",

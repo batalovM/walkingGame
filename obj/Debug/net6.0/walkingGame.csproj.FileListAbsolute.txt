@@ -268,3 +268,4 @@ C:\Users\sasha\RiderProjects\walkingGame\obj\Debug\net6.0\walkingGame.pdb
 C:\Users\sasha\RiderProjects\walkingGame\obj\Debug\net6.0\walkingGame.csproj.CopyComplete
 C:\Users\sasha\RiderProjects\walkingGame\obj\Debug\net6.0\walkingGame.genruntimeconfig.cache
 C:\Users\sasha\RiderProjects\walkingGame\obj\Debug\net6.0\ref\walkingGame.dll
+C:\Users\batal\RiderProjects\walkingGame\bin\Debug\net6.0\Avalonia.ReactiveUI.dll

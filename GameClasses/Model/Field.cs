@@ -8,13 +8,13 @@ public class Field
 {
     private const int CountOfCell = 32; 
     private Random r = new();
-    public List<Cell> List;
+    public List<Cell>? List;
 
     public void UpdateforGame()
     {
         for (var i = 1; i <= CountOfCell; i++)
         {
-            List.Add(new Cell(i, CellType.Normal));
+            List?.Add(new Cell(i, CellType.Normal));
         }
         RandomUpdateSomeCells();
     }

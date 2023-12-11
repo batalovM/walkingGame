@@ -3,10 +3,15 @@ using walkingGame.GameClasses.Interfaces;
 
 namespace walkingGame.GameClasses.Model;
 
-public abstract class Person : IRoll
+public class Person : IRoll
 {
     private RNGCryptoServiceProvider _rng = new();
     public int Score { get; set; }
+
+    public Person(int score)
+    {
+        Score = score;
+    }
 
     public void Move()
     {

@@ -3,6 +3,7 @@ using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
 using walkingGame.ViewModels;
 
+
 namespace walkingGame;
 
 public partial class App : Application
