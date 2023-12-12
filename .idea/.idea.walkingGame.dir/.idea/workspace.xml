@@ -7,36 +7,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6fbc6164-c89e-49d9-a0e0-b64aa67de73e" name="Changes" comment="">
+    <list default="true" id="6fbc6164-c89e-49d9-a0e0-b64aa67de73e" name="Changes" comment="Alfa-version update">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.walkingGame.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.walkingGame.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameClasses/Interfaces/IChangeCell.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameClasses/Interfaces/IChangeCell.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GameClasses/Model/Cell.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameClasses/Model/Cell.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GameClasses/Model/Field.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameClasses/Model/Field.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ViewModels/MainWindowViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ViewModels/MainWindowViewModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/MainWindow.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/MainWindow.axaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/walkingGame.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/walkingGame.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/walkingGame.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/walkingGame.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Avalonia/Resources.Inputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/Avalonia/Resources.Inputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Avalonia/original.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/Avalonia/original.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Avalonia/original.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/Avalonia/original.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Avalonia/original.ref.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/Avalonia/original.ref.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Avalonia/references" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/Avalonia/references" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Avalonia/resources" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/Avalonia/resources" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ref/walkingGame.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ref/walkingGame.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/refint/walkingGame.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/refint/walkingGame.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/walkingGame.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/walkingGame.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/walkingGame.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/walkingGame.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/walkingGame.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/walkingGame.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/walkingGame.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/walkingGame.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/walkingGame.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/walkingGame.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/walkingGame.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/walkingGame.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/walkingGame.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/walkingGame.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/walkingGame.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/walkingGame.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/walkingGame.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/walkingGame.csproj.nuget.g.props" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +33,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://C:/Users/batal/RiderProjects/walkingGame/GameClasses/Model/Field.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/batal/RiderProjects/walkingGame/GameClasses/Model/Cell.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MainWindow.axaml" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Views/MainWindow.axaml" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -128,7 +114,7 @@
       <workItem from="1702362492466" duration="905000" />
       <workItem from="1702363885595" duration="1551000" />
       <workItem from="1702375423083" duration="5381000" />
-      <workItem from="1702383050975" duration="6210000" />
+      <workItem from="1702383050975" duration="10469000" />
     </task>
     <task id="LOCAL-00001" summary="Добавление классов для разработки">
       <option name="closed" value="true" />
@@ -202,7 +188,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702318135455</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Alfa-version update">
+      <option name="closed" value="true" />
+      <created>1702393506121</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1702393506121</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,6 +225,7 @@
     <MESSAGE value="Front" />
     <MESSAGE value="update" />
     <MESSAGE value="upt" />
-    <option name="LAST_COMMIT_MESSAGE" value="upt" />
+    <MESSAGE value="Alfa-version update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Alfa-version update" />
   </component>
 </project>

@@ -9,17 +9,20 @@ public class Cell : IAffectOnPerson, ICellType, IChangeCell
         Number = number;
         Type = type;
     }
-
-    public Cell Name { get; set; }
     public int Number { get; set; }
     public void Affect(Person p)
     {
         p.Move();
     }
     public CellType Type { get; set; }
+
     public void SkipTurn(Person p)
     {
         p.Score += 0;
+    }
+
+    public void NormalTurn()
+    {
     }
     private bool _isExtraTurnCell = true;
     public void ExtraTurn(Person p)

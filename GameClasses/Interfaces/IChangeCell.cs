@@ -8,4 +8,5 @@ public interface IChangeCell
     public void ExtraTurn(Person p);
     public void BackTurn(Person p);
     public void FrontTurn(Person p);
+    public void NormalTurn();
 }

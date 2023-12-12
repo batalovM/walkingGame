@@ -18,7 +18,7 @@ public class Field
             {
                 list.Add(new Cell(i, CellType.Normal));
             }
-            RandomUpdateSomeCells();
+            SpecialCells();
         }
         catch (NullReferenceException e)
         {
@@ -26,7 +26,7 @@ public class Field
             throw;
         }
     }       
-    private void RandomUpdateSomeCells()
+    private void SpecialCells()
     {
         list[11].Type = CellType.FrontTurn;
         list[19].Type = CellType.BackTurn;
