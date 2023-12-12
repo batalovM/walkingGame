@@ -10,19 +10,17 @@ public class Cell : IAffectOnPerson, ICellType, IChangeCell
         Type = type;
     }
 
+    public Cell Name { get; set; }
     public int Number { get; set; }
     public void Affect(Person p)
     {
-        throw new System.NotImplementedException();
+        p.Move();
     }
-
     public CellType Type { get; set; }
-    
     public void SkipTurn(Person p)
     {
         p.Score += 0;
     }
-
     private bool _isExtraTurnCell = true;
     public void ExtraTurn(Person p)
     {
@@ -30,12 +28,10 @@ public class Cell : IAffectOnPerson, ICellType, IChangeCell
         p.Move();
         _isExtraTurnCell = false;
     }
-
     public void BackTurn(Person p)
     {
         p.Score -= 1;
     }
-
     public void FrontTurn(Person p)
     {
         p.Score += 1;

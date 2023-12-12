@@ -13,10 +13,10 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = walkingGame
-build_property.ProjectDir = C:\Users\sasha\RiderProjects\walkingGame\
+build_property.ProjectDir = C:\Users\batal\RiderProjects\walkingGame\
 
-[C:/Users/sasha/RiderProjects/walkingGame/App.axaml]
+[C:/Users/batal/RiderProjects/walkingGame/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/sasha/RiderProjects/walkingGame/Views/MainWindow.axaml]
+[C:/Users/batal/RiderProjects/walkingGame/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

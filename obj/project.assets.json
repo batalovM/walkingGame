@@ -232,6 +232,24 @@
           }
         }
       },
+      "Avalonia.ReactiveUI/11.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Avalonia": "11.0.2",
+          "ReactiveUI": "18.3.1",
+          "System.Reactive": "5.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Avalonia.ReactiveUI.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Avalonia.ReactiveUI.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Avalonia.Remote.Protocol/11.0.2": {
         "type": "package",
         "compile": {
@@ -1769,6 +1787,22 @@
         "lib/netstandard2.0/Avalonia.Native.dll",
         "lib/netstandard2.0/Avalonia.Native.xml",
         "runtimes/osx/native/libAvaloniaNative.dylib"
+      ]
+    },
+    "Avalonia.ReactiveUI/11.0.2": {
+      "sha512": "LScjxo5TrdfwJqrPvcgn7bnrKu7dbJG5EJQaXRp/eg5q+Kw0RFJmp/hJeOor+Pzp09cYWPh2YzpqAfPFIP5ORw==",
+      "type": "package",
+      "path": "avalonia.reactiveui/11.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "avalonia.reactiveui.11.0.2.nupkg.sha512",
+        "avalonia.reactiveui.nuspec",
+        "lib/net6.0/Avalonia.ReactiveUI.dll",
+        "lib/net6.0/Avalonia.ReactiveUI.xml",
+        "lib/netstandard2.0/Avalonia.ReactiveUI.dll",
+        "lib/netstandard2.0/Avalonia.ReactiveUI.xml"
       ]
     },
     "Avalonia.Remote.Protocol/11.0.2": {
@@ -4666,24 +4700,25 @@
       "Avalonia.Desktop >= 11.0.2",
       "Avalonia.Diagnostics >= 11.0.2",
       "Avalonia.Fonts.Inter >= 11.0.2",
+      "Avalonia.ReactiveUI >= 11.0.2",
       "Avalonia.Themes.Fluent >= 11.0.2",
       "ReactiveUI >= 19.5.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sasha\\.nuget\\packages\\": {}
+    "C:\\Users\\batal\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sasha\\RiderProjects\\walkingGame\\walkingGame.csproj",
+      "projectUniqueName": "C:\\Users\\batal\\RiderProjects\\walkingGame\\walkingGame.csproj",
       "projectName": "walkingGame",
-      "projectPath": "C:\\Users\\sasha\\RiderProjects\\walkingGame\\walkingGame.csproj",
-      "packagesPath": "C:\\Users\\sasha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sasha\\RiderProjects\\walkingGame\\obj\\",
+      "projectPath": "C:\\Users\\batal\\RiderProjects\\walkingGame\\walkingGame.csproj",
+      "packagesPath": "C:\\Users\\batal\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\batal\\RiderProjects\\walkingGame\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\sasha\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\batal\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -4720,6 +4755,10 @@
             "version": "[11.0.2, )"
           },
           "Avalonia.Fonts.Inter": {
+            "target": "Package",
+            "version": "[11.0.2, )"
+          },
+          "Avalonia.ReactiveUI": {
             "target": "Package",
             "version": "[11.0.2, )"
           },

@@ -8,27 +8,35 @@ public class Field
 {
     private const int CountOfCell = 32; 
     private Random r = new();
-    public List<Cell>? List;
+    public List<Cell> list = new(32);
 
     public void UpdateforGame()
     {
-        for (var i = 1; i <= CountOfCell; i++)
+        try
         {
-            List?.Add(new Cell(i, CellType.Normal));
+            for (var i = 1; i <= CountOfCell; i++)
+            {
+                list.Add(new Cell(i, CellType.Normal));
+            }
+            RandomUpdateSomeCells();
         }
-        RandomUpdateSomeCells();
-    }
-
+        catch (NullReferenceException e)
+        {
+            Console.WriteLine(e);
+            throw;
+        }
+    }       
     private void RandomUpdateSomeCells()
     {
-        var count = r.Next(0, CountOfCell);
-        for (var i = 0; i < count; i++)
-        {
-            var index = r.Next(0, CountOfCell); 
-            var newType = (CellType)r.Next(0, Enum.GetValues(typeof(CellType)).Length); 
-            List[index].Type = newType; 
-        }
-        
+        list[11].Type = CellType.FrontTurn;
+        list[19].Type = CellType.BackTurn;
+        list[3].Type = CellType.SkipTurn;
+        list[29].Type = CellType.BackTurn;
+        list[6].Type = CellType.ExtraTurn;
     }
-    
+
+    public CellType GetCell(int cellNumber)
+    {
+        return list[cellNumber].Type;
+    }
 }

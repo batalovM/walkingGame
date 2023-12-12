@@ -2,10 +2,14 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewModels="clr-namespace:walkingGame.ViewModels"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="walkingGame.MainWindow"
+        x:DataType="viewModels:MainWindowViewModel"
         Title="walkingGame">
-        
+        <Design.DataContext>
+                <viewModels:MainWindowViewModel/>/>
+        </Design.DataContext>
         <Grid  RowDefinitions="*, 6*, *">
                 <Grid  Grid.Row="0" ColumnDefinitions="*, *"  Background="DarkOliveGreen">
                         <Grid Grid.Column="0">
@@ -14,9 +18,7 @@
                                 </TextBlock>
                         </Grid>
                         <Grid Grid.Column="1">
-                                <TextBlock Margin="10"  HorizontalAlignment="Left" VerticalAlignment="Center" >
-                                        ss
-                                </TextBlock>
+                                <TextBlock Margin="10" Text="{Binding PlayerTurn}" HorizontalAlignment="Left" VerticalAlignment="Center"/>
                         </Grid>
                         
                         
@@ -25,11 +27,10 @@
                 <Grid Grid.Row="1"  Background="Gray" RowDefinitions="*, *, * ,*">
                         <Grid Grid.Row="0" ColumnDefinitions="*, *, *, *, *, *, * , *">
                                <Grid Grid.Column="0">
-                                       <Image VerticalAlignment="Top" HorizontalAlignment="Left" ZIndex="3" Width="60" Height="60" Source="C:\Users\sasha\RiderProjects\walkingGame\Assets\copy.png"></Image>
-                                       <Image VerticalAlignment="Bottom" HorizontalAlignment="Right" ZIndex="3" Width="60" Height="60" Source="C:\Users\sasha\RiderProjects\walkingGame\Assets\copy_copy.png"></Image>
+                                       <Image VerticalAlignment="Top" HorizontalAlignment="Left" ZIndex="3" Width="60" Height="60" Source="C:\Users\batal\RiderProjects\walkingGame\Assets\copy.png"></Image>
+                                       <Image VerticalAlignment="Bottom" HorizontalAlignment="Right" ZIndex="3" Width="60" Height="60" Source="C:\Users\batal\RiderProjects\walkingGame\Assets\copy_copy.png"></Image>
                                        <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
-                                               
-                                               <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">Старт</TextBlock>
+                                               <TextBlock Name="Start" VerticalAlignment="Center" HorizontalAlignment="Center">Старт</TextBlock>
                                        </Border>
                                </Grid>
                                 <Grid Grid.Column="1">
@@ -199,30 +200,32 @@
                 <Grid Grid.Row="2"  Background="DarkOliveGreen" ColumnDefinitions="*, * , 1.5*">
                         <Grid Grid.Column="0" ColumnDefinitions="*,*">
                                 <Grid Grid.Column="0" >
-                                        <Image Margin="10 0 0 0" VerticalAlignment="Center" HorizontalAlignment="Left" ZIndex="3" Width="60" Height="60" Source="C:\Users\sasha\RiderProjects\walkingGame\Assets\copy.png"></Image>
+                                        <Image Margin="10 0 0 0" VerticalAlignment="Center" HorizontalAlignment="Left" ZIndex="3" Width="60" Height="60" Source="C:\Users\batal\RiderProjects\walkingGame\Assets\copy.png"></Image>
                                         
                                         <TextBlock VerticalAlignment="Center" HorizontalAlignment="Right">
                                                 Игрок 1:
                                         </TextBlock>
                                 </Grid>
                                 <Grid Grid.Column="1">
-                                        <TextBlock Margin="10 0 0 0 " VerticalAlignment="Center" HorizontalAlignment="Left">s</TextBlock>
+                                        <TextBlock Text="{Binding FirstPlayerScore}" Margin="10 0 0 0 " VerticalAlignment="Center" HorizontalAlignment="Left">s</TextBlock>
                                 </Grid>
                                 
                         </Grid>
                         <Grid Grid.Column="1" ColumnDefinitions="*,*">
                                 <Grid Grid.Column="0" >
-                                        <Image Margin="10 0 0 0"   VerticalAlignment="Center" HorizontalAlignment="Left" ZIndex="3" Width="60" Height="60" Source="C:\Users\sasha\RiderProjects\walkingGame\Assets\copy_copy.png"></Image>
+                                        <Image Margin="10 0 0 0"   VerticalAlignment="Center" HorizontalAlignment="Left" ZIndex="3" Width="60" Height="60" Source="C:\Users\batal\RiderProjects\walkingGame\Assets\copy_copy.png"></Image>
                                         <TextBlock VerticalAlignment="Center" HorizontalAlignment="Right">
                                                 Игрок 2:
                                         </TextBlock>
                                 </Grid>
                                 <Grid Grid.Column="1">
-                                        <TextBlock Margin="10 0 0 0 " VerticalAlignment="Center" HorizontalAlignment="Left">s</TextBlock>
+                                        <TextBlock Margin="10 0 0 0 " Text="{Binding SecondPlayerScore}" VerticalAlignment="Center" HorizontalAlignment="Left">s</TextBlock>
                                 </Grid>
                         </Grid>
                         <Grid  Grid.Column="2">
-                                <Button MinHeight="30" MaxHeight="90" MinWidth="100" MaxWidth="600" VerticalAlignment="Center" Margin="0 0 40 0" HorizontalAlignment="Right">Сделать ход</Button>
+                                <Button MinHeight="30" 
+                                        Command="{Binding CellClickedButton}"
+                                        MaxHeight="90" MinWidth="100" MaxWidth="600" VerticalAlignment="Center" Margin="0 0 40 0" HorizontalAlignment="Right">Сделать ход</Button>
                         </Grid>
                 </Grid>
                 
