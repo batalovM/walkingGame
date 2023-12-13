@@ -21,8 +21,8 @@
                         </Grid>
                         <Grid Grid.Column="1">
                                 <StackPanel VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal">
-                                        <Button Opacity="0.6" Background="GreenYellow" CornerRadius="10" Margin="10" VerticalAlignment="Center" Content="Сохранить"></Button>
-                                        <Button Opacity="0.6" Background="GreenYellow" CornerRadius="10" Margin="10" VerticalAlignment="Center" Content="Начать заново"></Button>
+                                        <Button Command="{Binding SaveClickedButton}" Opacity="0.6" Background="GreenYellow" CornerRadius="10" Margin="10" VerticalAlignment="Center" Content="Сохранить"></Button>
+                                        <Button Command="{Binding ReloadClickedButton}" Opacity="0.6" Background="GreenYellow" CornerRadius="10" Margin="10" VerticalAlignment="Center" Content="Начать заново"></Button>
                                 </StackPanel>
                                 
                                 <TextBlock Margin="10" Text="{Binding PlayerTurn}" HorizontalAlignment="Left" VerticalAlignment="Center"/>
@@ -228,7 +228,7 @@
                 <Grid Grid.Row="2"  Background="DarkOliveGreen" ColumnDefinitions="*, * , 1.5*">
                         <Grid Grid.Column="0" ColumnDefinitions="*,*">
                                 <Grid Grid.Column="0" >
-                                        <Image Margin="10 0 0 0" VerticalAlignment="Center" HorizontalAlignment="Left" ZIndex="3" Width="60" Height="60" Source="C:\Users\sasha\RiderProjects\walkingGame\Assets\copy.png"></Image>
+                                        <Image Margin="10 0 0 0" VerticalAlignment="Center" HorizontalAlignment="Left" ZIndex="3" Width="60" Height="60" Source="C:\Users\batal\RiderProjects\walkingGame\Assets\copy.png"></Image>
                                         
                                         <TextBlock VerticalAlignment="Center" HorizontalAlignment="Right">
                                                 Игрок 1:
@@ -241,7 +241,7 @@
                         </Grid>
                         <Grid Grid.Column="1" ColumnDefinitions="*,*">
                                 <Grid Grid.Column="0" >
-                                        <Image Margin="10 0 0 0"   VerticalAlignment="Center" HorizontalAlignment="Left" ZIndex="3" Width="60" Height="60" Source="C:\Users\sasha\RiderProjects\walkingGame\Assets\copy_copy.png"></Image>
+                                        <Image Margin="10 0 0 0"   VerticalAlignment="Center" HorizontalAlignment="Left" ZIndex="3" Width="60" Height="60" Source="C:\Users\batal\RiderProjects\walkingGame\Assets\copy_copy.png"></Image>
                                         <TextBlock VerticalAlignment="Center" HorizontalAlignment="Right">
                                                 Игрок 2:
                                         </TextBlock>
@@ -254,7 +254,7 @@
                                 <Button MinHeight="30" 
                                         Command="{Binding CellClickedButton}"
                                         Background="DarkOliveGreen" VerticalAlignment="Center" Margin="5 5 20 5" HorizontalAlignment="Right">
-                                        <Image Source="C:\Users\sasha\RiderProjects\walkingGame\Assets\dice.png"></Image>
+                                        <Image Source="C:\Users\batal\RiderProjects\walkingGame\Assets\dice.png"></Image>
                                 </Button>
                         </Grid>
                 </Grid>
