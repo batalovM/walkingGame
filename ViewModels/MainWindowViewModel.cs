@@ -17,8 +17,8 @@ public class MainWindowViewModel : ViewModelBase
         GameField.UpdateforGame();
         _player1 = new Person(1);
         _player2 = new Person(1);
-        ImagePlayer1 = new Bitmap(@"C:\Users\sasha\RiderProjects\walkingGame\Assets\copy.png");
-        ImagePlayer2 = new Bitmap(@"C:\Users\sasha\RiderProjects\walkingGame\Assets\copy_copy.png");
+        ImagePlayer1 = new Bitmap(@"C:\Users\batal\RiderProjects\walkingGame\Assets\copy.png");
+        ImagePlayer2 = new Bitmap(@"C:\Users\batal\RiderProjects\walkingGame\Assets\copy_copy.png");
         CellClickedButton = ReactiveCommand.Create(MakeMove);
         _cellFirstPlayer = new Cell(_player1.Score, GameField.GetCell(_player1.Score));
         _cellSecondPlayer = new Cell(_player2.Score, GameField.GetCell(_player2.Score));
@@ -36,6 +36,10 @@ public class MainWindowViewModel : ViewModelBase
     private string _playerTurn = "Ход игрока 1";
     private int _gridColumn1;
     private int _gridColumn2;
+    private int _gridRow1;
+    private int _gridRow2;
+    public int GridRowFirst {get => _gridRow1;set => this.RaiseAndSetIfChanged(ref _gridRow1, value);}
+    public int GridRowSecond {get => _gridRow2;set => this.RaiseAndSetIfChanged(ref _gridRow2, value);} 
     public int GridColumnFirst {get => _gridColumn1;set => this.RaiseAndSetIfChanged(ref _gridColumn1, value);}
     public int GridColumnSecond {get => _gridColumn2;set => this.RaiseAndSetIfChanged(ref _gridColumn2, value);} 
     public Bitmap ImagePlayer1 {get => _imagePlayer1; set => this.RaiseAndSetIfChanged(ref _imagePlayer1, value);}//получение картинки 1 игрока
@@ -51,14 +55,54 @@ public class MainWindowViewModel : ViewModelBase
         if (_isPlayer1Turn)
         {
             AffectCell(_player1, _cellFirstPlayer);
-            GridColumnFirst = _player1.Score - 1;
+            if (_player1.Score <= 8)
+            {
+                GridColumnFirst = _player1.Score - 1;
+                GridRowFirst = 0;
+            }
+            if(_player1.Score is > 8 and <= 16){
+                GridColumnFirst = 16 - _player1.Score;
+                GridRowFirst = 1;
+            }
+
+            if (_player1.Score is > 16 and <= 24)
+            {
+                GridColumnFirst = _player1.Score - 17;
+                GridRowFirst = 2;
+            }
+            if(_player1.Score is > 24 and <= 32)
+            {
+                GridColumnFirst = 32- _player1.Score;
+                GridRowFirst = 3;
+            }
+            if (_player1.Score >= 32) GridColumnFirst = 0;
             Console.WriteLine(_player1.Score);
             PlayerTurn = "Ход игрока 2"; 
         }
         else
         {
             AffectCell(_player2, _cellSecondPlayer);
-            GridColumnSecond = _player2.Score - 1;
+            if (_player2.Score <= 8)
+            {
+                GridColumnSecond = _player2.Score - 1;
+                GridRowSecond = 0;
+            }
+            if(_player2.Score is > 8 and <= 16){
+                GridColumnSecond = 16 - _player2.Score;
+                GridRowSecond = 1;
+            }
+
+            if (_player2.Score is > 16 and <= 24)
+            {
+                GridColumnSecond = _player2.Score - 17;
+                GridRowSecond = 2;
+            }
+            if(_player2.Score is > 24 and <= 32)
+            {
+                GridColumnSecond = 32- _player2.Score;
+                GridRowSecond = 3;
+            }
+            if (_player2.Score >= 32) GridColumnSecond = 0;
             Console.WriteLine(_player2.Score);
             PlayerTurn = "Ход игрока 1";
         }
@@ -67,9 +111,9 @@ public class MainWindowViewModel : ViewModelBase
         this.RaisePropertyChanged(nameof(SecondPlayerScore));
     }
     public void AffectCell(Person person, Cell cell){
-        person.Move();
         cell.Number = person.Score;
         cell.Type = GameField.GetCell(cell.Number);
+        person.Move();
         cell.Affect(person, cell);
 
     }
