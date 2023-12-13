@@ -20,35 +20,34 @@
                         <Grid Grid.Column="1">
                                 <TextBlock Margin="10" Text="{Binding PlayerTurn}" HorizontalAlignment="Left" VerticalAlignment="Center"/>
                         </Grid>
-                        
-                        
                 </Grid>
                 
-                <Grid Grid.Row="1"  Background="Gray" RowDefinitions="*, *, * ,*">
-                        <Grid Grid.Row="0" ColumnDefinitions="*, *, *, *, *, *, * , *">
-                               <Grid Grid.Column="0">
-                                       <Image VerticalAlignment="Top" HorizontalAlignment="Left" ZIndex="3" Width="60" Height="60" Source="C:\Users\batal\RiderProjects\walkingGame\Assets\copy.png"></Image>
-                                       <Image VerticalAlignment="Bottom" HorizontalAlignment="Right" ZIndex="3" Width="60" Height="60" Source="C:\Users\batal\RiderProjects\walkingGame\Assets\copy_copy.png"></Image>
+                <Grid Grid.Row="1"  Background="Gray" RowDefinitions="*, *, * ,*" ZIndex="0">
+                        <Grid Grid.Row="0" ColumnDefinitions="*, *, *, *, *, *, * , *" ZIndex="0">
+                                <Image Grid.Column="{Binding GridColumnFirst}" VerticalAlignment="Top"  HorizontalAlignment="Left" ZIndex="{Binding ZIndex, Mode= TwoWay}" Width="60" Height="60"  Source="{Binding ImagePlayer1}"></Image>
+                                <Image Grid.Column="{Binding GridColumnSecond}" VerticalAlignment="Bottom" HorizontalAlignment="Right" ZIndex="3" Width="60" Height="60" Source="{Binding ImagePlayer2}"></Image>
+                                <Grid Grid.Column="0" ZIndex="0">
+                                      
                                        <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
                                                <TextBlock Name="Start" VerticalAlignment="Center" HorizontalAlignment="Center">Старт</TextBlock>
                                        </Border>
                                </Grid>
-                                <Grid Grid.Column="1">
+                                <Grid Grid.Column="1" ZIndex="0">
                                         <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
                                                 <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">2</TextBlock>
                                         </Border>
                                 </Grid>
-                                <Grid Grid.Column="2">
+                                <Grid Grid.Column="2" ZIndex="0">
                                         <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
                                                 <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">3</TextBlock>
                                         </Border>
                                 </Grid>
-                                <Grid Grid.Column="3">
+                                <Grid Grid.Column="3" ZIndex="0">
                                         <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
                                                 <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">4</TextBlock>
                                         </Border>
                                 </Grid>
-                                <Grid Grid.Column="4">
+                                <Grid Grid.Column="4" ZIndex="0">
                                         <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
                                                 <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">5</TextBlock>
                                         </Border>
