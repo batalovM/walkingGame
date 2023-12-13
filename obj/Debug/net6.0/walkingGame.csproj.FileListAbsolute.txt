@@ -269,3 +269,7 @@ C:\Users\sasha\RiderProjects\walkingGame\obj\Debug\net6.0\walkingGame.csproj.Cop
 C:\Users\sasha\RiderProjects\walkingGame\obj\Debug\net6.0\walkingGame.genruntimeconfig.cache
 C:\Users\sasha\RiderProjects\walkingGame\obj\Debug\net6.0\ref\walkingGame.dll
 C:\Users\batal\RiderProjects\walkingGame\bin\Debug\net6.0\Avalonia.ReactiveUI.dll
+C:\Users\batal\RiderProjects\walkingGame\bin\Debug\net6.0\ColorTextBlock.Avalonia.dll
+C:\Users\batal\RiderProjects\walkingGame\bin\Debug\net6.0\DialogHost.Avalonia.dll
+C:\Users\batal\RiderProjects\walkingGame\bin\Debug\net6.0\Markdown.Avalonia.dll
+C:\Users\batal\RiderProjects\walkingGame\bin\Debug\net6.0\MsBox.Avalonia.dll

@@ -6,9 +6,9 @@ namespace walkingGame.GameClasses.Model;
 
 public class Field 
 {
-    private const int CountOfCell = 32; 
+    private const int CountOfCell = 40; 
     private Random r = new();
-    public List<Cell> list = new(32);
+    public List<Cell> list = new(40);
 
     public void UpdateforGame()
     {

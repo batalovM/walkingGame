@@ -62,6 +62,10 @@
               "target": "Package",
               "version": "[11.0.2, )"
             },
+            "MessageBox.Avalonia": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "ReactiveUI": {
               "target": "Package",
               "version": "[19.5.1, )"

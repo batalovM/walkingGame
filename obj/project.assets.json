@@ -354,6 +354,35 @@
           }
         }
       },
+      "ColorTextBlock.Avalonia/11.0.0-d1": {
+        "type": "package",
+        "dependencies": {
+          "Avalonia": "11.0.0-rc1.1"
+        },
+        "compile": {
+          "lib/net6.0/ColorTextBlock.Avalonia.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/ColorTextBlock.Avalonia.dll": {}
+        }
+      },
+      "DialogHost.Avalonia/0.7.5": {
+        "type": "package",
+        "dependencies": {
+          "Avalonia": "11.0.0-rc2.1",
+          "System.Reactive": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/DialogHost.Avalonia.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/DialogHost.Avalonia.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "DynamicData/8.0.2": {
         "type": "package",
         "dependencies": {
@@ -466,6 +495,33 @@
             "assetType": "native",
             "rid": "win-x86"
           }
+        }
+      },
+      "Markdown.Avalonia.Tight/11.0.0-d1": {
+        "type": "package",
+        "dependencies": {
+          "Avalonia": "11.0.0-rc1.1",
+          "ColorTextBlock.Avalonia": "11.0.0-d1"
+        },
+        "compile": {
+          "lib/net6.0/Markdown.Avalonia.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Markdown.Avalonia.dll": {}
+        }
+      },
+      "MessageBox.Avalonia/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Avalonia": "11.0.0",
+          "DialogHost.Avalonia": "0.7.5",
+          "Markdown.Avalonia.Tight": "11.0.0-d1"
+        },
+        "compile": {
+          "lib/netstandard2.0/MsBox.Avalonia.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MsBox.Avalonia.dll": {}
         }
       },
       "MicroCom.Runtime/0.11.0": {
@@ -1901,6 +1957,36 @@
         "lib/netstandard2.0/Avalonia.X11.xml"
       ]
     },
+    "ColorTextBlock.Avalonia/11.0.0-d1": {
+      "sha512": "sQAZgCwCS7vT5qGlxivrx6WAb1xkP47p4gAVmv5GQapfW8YXuk9a/t6QLmjJqFTJAAdk8M1EAUde0Ox5HPxjHA==",
+      "type": "package",
+      "path": "colortextblock.avalonia/11.0.0-d1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "colortextblock.avalonia.11.0.0-d1.nupkg.sha512",
+        "colortextblock.avalonia.nuspec",
+        "lib/net461/ColorTextBlock.Avalonia.dll",
+        "lib/net6.0/ColorTextBlock.Avalonia.dll",
+        "lib/netcoreapp2.0/ColorTextBlock.Avalonia.dll",
+        "lib/netstandard2.0/ColorTextBlock.Avalonia.dll"
+      ]
+    },
+    "DialogHost.Avalonia/0.7.5": {
+      "sha512": "jpXMSP2dy/K5UY6lclNjVgeqkitT+Vh8Aj4cLD64TShnDoBxfKOqHd8TMaFCkU5fa7hfhysdxZLZN2IrSwUZcw==",
+      "type": "package",
+      "path": "dialoghost.avalonia/0.7.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "dialoghost.avalonia.0.7.5.nupkg.sha512",
+        "dialoghost.avalonia.nuspec",
+        "icon.png",
+        "lib/netstandard2.0/DialogHost.Avalonia.dll",
+        "lib/netstandard2.0/DialogHost.Avalonia.xml"
+      ]
+    },
     "DynamicData/8.0.2": {
       "sha512": "zGKeUZcaW4Nxx8T2OyrkFnb+sIc6cnfCxQr/a/5Sm+Idg9rRJruHS8KFKVUIXNxDC0yQZYwO+22XBumMznA8sg==",
       "type": "package",
@@ -2087,6 +2173,35 @@
         "runtimes/win-arm64/native/libHarfBuzzSharp.dll",
         "runtimes/win-x64/native/libHarfBuzzSharp.dll",
         "runtimes/win-x86/native/libHarfBuzzSharp.dll"
+      ]
+    },
+    "Markdown.Avalonia.Tight/11.0.0-d1": {
+      "sha512": "fwl4wrvTdLFLUfkFezRY6SSfPmXIJcRyYChMDiMKFEGo1rKdPMnmcJbK+BWYXxZS+g66E6SFl/ca4kakhTk1HQ==",
+      "type": "package",
+      "path": "markdown.avalonia.tight/11.0.0-d1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Markdown.Avalonia.Tight.md",
+        "lib/net461/Markdown.Avalonia.dll",
+        "lib/net6.0/Markdown.Avalonia.dll",
+        "lib/netcoreapp2.0/Markdown.Avalonia.dll",
+        "lib/netstandard2.0/Markdown.Avalonia.dll",
+        "markdown.avalonia.tight.11.0.0-d1.nupkg.sha512",
+        "markdown.avalonia.tight.nuspec"
+      ]
+    },
+    "MessageBox.Avalonia/3.0.0": {
+      "sha512": "xGIiABBLFo4eq6MCR53AGUD/RLWCnOJbonToH2EsE1O30b2Utlddo8mq82Vu8TB2CQmvAklZGsDtzPbONA43cQ==",
+      "type": "package",
+      "path": "messagebox.avalonia/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.jpg",
+        "lib/netstandard2.0/MsBox.Avalonia.dll",
+        "messagebox.avalonia.3.0.0.nupkg.sha512",
+        "messagebox.avalonia.nuspec"
       ]
     },
     "MicroCom.Runtime/0.11.0": {
@@ -4702,23 +4817,24 @@
       "Avalonia.Fonts.Inter >= 11.0.2",
       "Avalonia.ReactiveUI >= 11.0.2",
       "Avalonia.Themes.Fluent >= 11.0.2",
+      "MessageBox.Avalonia >= 3.0.0",
       "ReactiveUI >= 19.5.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sasha\\.nuget\\packages\\": {}
+    "C:\\Users\\batal\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sasha\\RiderProjects\\walkingGame\\walkingGame.csproj",
+      "projectUniqueName": "C:\\Users\\batal\\RiderProjects\\walkingGame\\walkingGame.csproj",
       "projectName": "walkingGame",
-      "projectPath": "C:\\Users\\sasha\\RiderProjects\\walkingGame\\walkingGame.csproj",
-      "packagesPath": "C:\\Users\\sasha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sasha\\RiderProjects\\walkingGame\\obj\\",
+      "projectPath": "C:\\Users\\batal\\RiderProjects\\walkingGame\\walkingGame.csproj",
+      "packagesPath": "C:\\Users\\batal\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\batal\\RiderProjects\\walkingGame\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\sasha\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\batal\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -4765,6 +4881,10 @@
           "Avalonia.Themes.Fluent": {
             "target": "Package",
             "version": "[11.0.2, )"
+          },
+          "MessageBox.Avalonia": {
+            "target": "Package",
+            "version": "[3.0.0, )"
           },
           "ReactiveUI": {
             "target": "Package",

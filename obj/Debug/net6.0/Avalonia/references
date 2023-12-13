@@ -22,8 +22,11 @@ C:\Users\batal\.nuget\packages\avalonia.themes.fluent\11.0.2\lib\net6.0\Avalonia
 C:\Users\batal\.nuget\packages\avalonia.themes.simple\11.0.2\lib\net6.0\Avalonia.Themes.Simple.dll
 C:\Users\batal\.nuget\packages\avalonia.win32\11.0.2\lib\net6.0\Avalonia.Win32.dll
 C:\Users\batal\.nuget\packages\avalonia.x11\11.0.2\lib\net6.0\Avalonia.X11.dll
+C:\Users\batal\.nuget\packages\colortextblock.avalonia\11.0.0-d1\lib\net6.0\ColorTextBlock.Avalonia.dll
+C:\Users\batal\.nuget\packages\dialoghost.avalonia\0.7.5\lib\netstandard2.0\DialogHost.Avalonia.dll
 C:\Users\batal\.nuget\packages\dynamicdata\8.0.2\lib\net6.0\DynamicData.dll
 C:\Users\batal\.nuget\packages\harfbuzzsharp\2.8.2.3\lib\net6.0\HarfBuzzSharp.dll
+C:\Users\batal\.nuget\packages\markdown.avalonia.tight\11.0.0-d1\lib\net6.0\Markdown.Avalonia.dll
 C:\Users\batal\.nuget\packages\microcom.runtime\0.11.0\lib\net5.0\MicroCom.Runtime.dll
 C:\Users\batal\.nuget\packages\microsoft.codeanalysis.csharp\3.8.0\lib\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
 C:\Users\batal\.nuget\packages\microsoft.codeanalysis.csharp.scripting\3.8.0\lib\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Scripting.dll
@@ -35,6 +38,7 @@ C:\Users\batal\.nuget\packages\microsoft.netcore.app.ref\6.0.24\ref\net6.0\Micro
 C:\Users\batal\.nuget\packages\microsoft.netcore.app.ref\6.0.24\ref\net6.0\Microsoft.Win32.Primitives.dll
 C:\Users\batal\.nuget\packages\microsoft.netcore.app.ref\6.0.24\ref\net6.0\Microsoft.Win32.Registry.dll
 C:\Users\batal\.nuget\packages\microsoft.win32.systemevents\6.0.0\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\batal\.nuget\packages\messagebox.avalonia\3.0.0\lib\netstandard2.0\MsBox.Avalonia.dll
 C:\Users\batal\.nuget\packages\microsoft.netcore.app.ref\6.0.24\ref\net6.0\mscorlib.dll
 C:\Users\batal\.nuget\packages\microsoft.netcore.app.ref\6.0.24\ref\net6.0\netstandard.dll
 C:\Users\batal\.nuget\packages\reactiveui\19.5.1\lib\net6.0\ReactiveUI.dll

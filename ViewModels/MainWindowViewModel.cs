@@ -6,6 +6,10 @@ using Avalonia.Media.Imaging;
 using ReactiveUI;
 using walkingGame.GameClasses.Model;
 using Avalonia.Visuals;
+using MsBox.Avalonia;
+using MsBox.Avalonia.Enums;
+using Tmds.DBus.Protocol;
+
 namespace walkingGame.ViewModels;
 public class MainWindowViewModel : ViewModelBase
 {
@@ -52,6 +56,7 @@ public class MainWindowViewModel : ViewModelBase
     private void MakeMove()//метод игры 
     {
         if (_player1.Score >= 32 ^ _player2.Score >= 32) return;
+            
         if (_isPlayer1Turn)
         {
             AffectCell(_player1, _cellFirstPlayer);
@@ -75,7 +80,13 @@ public class MainWindowViewModel : ViewModelBase
                 GridColumnFirst = 32- _player1.Score;
                 GridRowFirst = 3;
             }
-            if (_player1.Score >= 32) GridColumnFirst = 0;
+
+            if (_player1.Score >= 32)
+            {
+                GridColumnFirst = 0;
+                var box = MessageBoxManager.GetMessageBoxStandard("Поздравляю!", "Победил игрок 1");
+                box.ShowAsync();
+            }
             Console.WriteLine(_player1.Score);
             PlayerTurn = "Ход игрока 2"; 
         }
@@ -102,7 +113,13 @@ public class MainWindowViewModel : ViewModelBase
                 GridColumnSecond = 32- _player2.Score;
                 GridRowSecond = 3;
             }
-            if (_player2.Score >= 32) GridColumnSecond = 0;
+
+            if (_player2.Score >= 32)
+            {
+                GridColumnSecond = 0;
+                var box = MessageBoxManager.GetMessageBoxStandard("Поздравляю!", "Победил игрок 2");
+                box.ShowAsync();
+            }
             Console.WriteLine(_player2.Score);
             PlayerTurn = "Ход игрока 1";
         }
@@ -111,9 +128,9 @@ public class MainWindowViewModel : ViewModelBase
         this.RaisePropertyChanged(nameof(SecondPlayerScore));
     }
     public void AffectCell(Person person, Cell cell){
+        person.Move();
         cell.Number = person.Score;
         cell.Type = GameField.GetCell(cell.Number);
-        person.Move();
         cell.Affect(person, cell);
 
     }
