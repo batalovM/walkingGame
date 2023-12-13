@@ -26,15 +26,32 @@
       <DependentUpon>MainWindow.axaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Remove="Images\**" />
   </ItemGroup>
 
 
   <ItemGroup>
     <AvaloniaXaml Remove="MainWindow.axaml" />
+    <AvaloniaXaml Remove="Images\**" />
   </ItemGroup>
 
 
   <ItemGroup>
-    <Folder Include="Assets\" />
+    <EmbeddedResource Remove="Images\**" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <AdditionalFiles Remove="Images\**" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <AvaloniaResource Remove="Images\**" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <None Remove="Images\**" />
   </ItemGroup>
 </Project>

@@ -10,6 +10,7 @@
         <Design.DataContext>
                 <viewModels:MainWindowViewModel/>/>
         </Design.DataContext>
+        
         <Grid  RowDefinitions="*, 6*, *">
                 <Grid  Grid.Row="0" ColumnDefinitions="*, *"  Background="DarkOliveGreen">
                         <Grid Grid.Column="0">
@@ -199,7 +200,7 @@
                 <Grid Grid.Row="2"  Background="DarkOliveGreen" ColumnDefinitions="*, * , 1.5*">
                         <Grid Grid.Column="0" ColumnDefinitions="*,*">
                                 <Grid Grid.Column="0" >
-                                        <Image Margin="10 0 0 0" VerticalAlignment="Center" HorizontalAlignment="Left" ZIndex="3" Width="60" Height="60" Source="C:\Users\batal\RiderProjects\walkingGame\Assets\copy.png"></Image>
+                                        <Image Margin="10 0 0 0" VerticalAlignment="Center" HorizontalAlignment="Left" ZIndex="3" Width="60" Height="60" Source="C:\Users\sasha\RiderProjects\walkingGame\Assets\copy.png"></Image>
                                         
                                         <TextBlock VerticalAlignment="Center" HorizontalAlignment="Right">
                                                 Игрок 1:
@@ -212,7 +213,7 @@
                         </Grid>
                         <Grid Grid.Column="1" ColumnDefinitions="*,*">
                                 <Grid Grid.Column="0" >
-                                        <Image Margin="10 0 0 0"   VerticalAlignment="Center" HorizontalAlignment="Left" ZIndex="3" Width="60" Height="60" Source="C:\Users\batal\RiderProjects\walkingGame\Assets\copy_copy.png"></Image>
+                                        <Image Margin="10 0 0 0"   VerticalAlignment="Center" HorizontalAlignment="Left" ZIndex="3" Width="60" Height="60" Source="C:\Users\sasha\RiderProjects\walkingGame\Assets\copy_copy.png"></Image>
                                         <TextBlock VerticalAlignment="Center" HorizontalAlignment="Right">
                                                 Игрок 2:
                                         </TextBlock>

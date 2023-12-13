@@ -15,8 +15,7 @@ public class Person : IRoll
 
     public void Move()
     {
-        Score += 10;
-        // Score += Roll();
+        Score += Roll();
     }
     
     public int Roll()

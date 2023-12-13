@@ -9,17 +9,20 @@ using Avalonia.Visuals;
 namespace walkingGame.ViewModels;
 public class MainWindowViewModel : ViewModelBase
 {
+    
     public MainWindowViewModel()
     {
+        
         GameField = new Field(); 
         GameField.UpdateforGame();
         _player1 = new Person(1);
         _player2 = new Person(1);
-        ImagePlayer1 = new Bitmap(@"C:\Users\batal\RiderProjects\walkingGame\Assets\copy.png");
-        ImagePlayer2 = new Bitmap(@"C:\Users\batal\RiderProjects\walkingGame\Assets\copy_copy.png");
+        ImagePlayer1 = new Bitmap(@"C:\Users\sasha\RiderProjects\walkingGame\Assets\copy.png");
+        ImagePlayer2 = new Bitmap(@"C:\Users\sasha\RiderProjects\walkingGame\Assets\copy_copy.png");
         CellClickedButton = ReactiveCommand.Create(MakeMove);
         _cellFirstPlayer = new Cell(_player1.Score, GameField.GetCell(_player1.Score));
         _cellSecondPlayer = new Cell(_player2.Score, GameField.GetCell(_player2.Score));
+        
     }
     private int _zIndex = 1;
     public int ZIndex {get => _zIndex; set{ _zIndex = value; this.RaiseAndSetIfChanged(ref _zIndex, value);}}
@@ -47,36 +50,27 @@ public class MainWindowViewModel : ViewModelBase
         if (_player1.Score >= 32 ^ _player2.Score >= 32) return;
         if (_isPlayer1Turn)
         {
-            AffectCell(_cellFirstPlayer, _player1);
-            _cellFirstPlayer.Number = _player1.Score;
+            AffectCell(_player1, _cellFirstPlayer);
             GridColumnFirst = _player1.Score - 1;
             Console.WriteLine(_player1.Score);
-            if(_cellFirstPlayer.Type == CellType.Normal) _cellFirstPlayer.NormalTurn();
-            if(_cellFirstPlayer.Type == CellType.BackTurn) _cellFirstPlayer.BackTurn(_player1);
-            if(_cellFirstPlayer.Type == CellType.ExtraTurn) _cellFirstPlayer.ExtraTurn(_player1);
-            if(_cellFirstPlayer.Type == CellType.FrontTurn) _cellFirstPlayer.FrontTurn(_player1);
-            if(_cellFirstPlayer.Type == CellType.SkipTurn) _cellFirstPlayer.SkipTurn(_player1);
             PlayerTurn = "Ход игрока 2"; 
         }
         else
         {
-            AffectCell(_cellSecondPlayer, _player2);
-            _cellSecondPlayer.Number = _player2.Score;
+            AffectCell(_player2, _cellSecondPlayer);
             GridColumnSecond = _player2.Score - 1;
             Console.WriteLine(_player2.Score);
-            if(_cellSecondPlayer.Type == CellType.Normal) _cellSecondPlayer.NormalTurn();
-            if(_cellSecondPlayer.Type == CellType.BackTurn) _cellSecondPlayer.BackTurn(_player2);
-            if(_cellSecondPlayer.Type == CellType.ExtraTurn) _cellSecondPlayer.ExtraTurn(_player2);
-            if(_cellSecondPlayer.Type == CellType.FrontTurn) _cellSecondPlayer.FrontTurn(_player2);
-            if(_cellSecondPlayer.Type == CellType.SkipTurn) _cellSecondPlayer.SkipTurn(_player2);
             PlayerTurn = "Ход игрока 1";
         }
         _isPlayer1Turn = !_isPlayer1Turn;
         this.RaisePropertyChanged(nameof(FirstPlayerScore));//обновление количества очков 
         this.RaisePropertyChanged(nameof(SecondPlayerScore));
     }
-    public void AffectCell(Cell cell, Person person)
-    {
-        cell.Affect(person);
+    public void AffectCell(Person person, Cell cell){
+        person.Move();
+        cell.Number = person.Score;
+        cell.Type = GameField.GetCell(cell.Number);
+        cell.Affect(person, cell);
+
     }
 }
