@@ -41,34 +41,30 @@ public class MainWindowViewModel : ViewModelBase
     {
         if (_player1.Score >= 32 ^ _player2.Score >= 32) return;
         if (_isPlayer1Turn)
-        {
-            AffectCell(_cellFirstPlayer, _player1);
-            Console.WriteLine(_player1.Score);
-            if(_cellFirstPlayer.Type == CellType.Normal) _cellFirstPlayer.NormalTurn();
-            if(_cellFirstPlayer.Type == CellType.BackTurn) _cellFirstPlayer.BackTurn(_player1);
-            if(_cellFirstPlayer.Type == CellType.ExtraTurn) _cellFirstPlayer.ExtraTurn(_player1);
-            if(_cellFirstPlayer.Type == CellType.FrontTurn) _cellFirstPlayer.FrontTurn(_player1);
-            if(_cellFirstPlayer.Type == CellType.SkipTurn) _cellFirstPlayer.SkipTurn(_player1);
-            PlayerTurn = "Ход игрока 2"; 
+        { 
+             AffectCell(_player1, _cellFirstPlayer);
+             Console.WriteLine(_player1.Score);
+             Console.WriteLine(_cellFirstPlayer.Type);
+             PlayerTurn = "Ход игрока 2"; 
         }
         else
         {
-            AffectCell(_cellSecondPlayer, _player2);
-            Console.WriteLine(_player2.Score);
-            if(_cellSecondPlayer.Type == CellType.Normal) _cellSecondPlayer.NormalTurn();
-            if(_cellSecondPlayer.Type == CellType.BackTurn) _cellSecondPlayer.BackTurn(_player2);
-            if(_cellSecondPlayer.Type == CellType.ExtraTurn) _cellSecondPlayer.ExtraTurn(_player2);
-            if(_cellSecondPlayer.Type == CellType.FrontTurn) _cellSecondPlayer.FrontTurn(_player2);
-            if(_cellSecondPlayer.Type == CellType.SkipTurn) _cellSecondPlayer.SkipTurn(_player2);
-            PlayerTurn = "Ход игрока 1";
+             AffectCell(_player2, _cellSecondPlayer);
+             Console.WriteLine(_player2.Score);
+             Console.WriteLine(_cellFirstPlayer.Type);
+             PlayerTurn = "Ход игрока 1";
         }
         _isPlayer1Turn = !_isPlayer1Turn;
         this.RaisePropertyChanged(nameof(FirstPlayerScore));
         this.RaisePropertyChanged(nameof(SecondPlayerScore));
     }
-    public void AffectCell(Cell cell, Person person)
-    {
-        cell.Affect(person);
+    public void AffectCell(Person person, Cell cell){
+        person.Move();
+        cell.Number = person.Score;
+        cell.Type = GameField.GetCell(cell.Number);
+        cell.Affect(person, cell);
+       
     }
+    
 
 }

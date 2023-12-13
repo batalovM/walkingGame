@@ -1,3 +1,4 @@
+using System;
 using walkingGame.GameClasses.Interfaces;
 
 namespace walkingGame.GameClasses.Model;
@@ -10,9 +11,25 @@ public class Cell : IAffectOnPerson, ICellType, IChangeCell
         Type = type;
     }
     public int Number { get; set; }
-    public void Affect(Person p)
+    public void Affect(Person p, Cell cell) 
     {
-        p.Move();
+        switch (cell.Type)
+        {
+            case CellType.Normal: 
+                break;
+            case CellType.SkipTurn:
+                SkipTurn(p);
+                break;
+            case CellType.ExtraTurn:
+                ExtraTurn(p);
+                break;
+            case CellType.BackTurn:
+                BackTurn(p);
+                break;
+            case CellType.FrontTurn:
+                FrontTurn(p);
+                break;
+        }
     }
     public CellType Type { get; set; }
 
@@ -23,6 +40,7 @@ public class Cell : IAffectOnPerson, ICellType, IChangeCell
 
     public void NormalTurn()
     {
+        
     }
     private bool _isExtraTurnCell = true;
     public void ExtraTurn(Person p)
