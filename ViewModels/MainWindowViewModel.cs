@@ -27,7 +27,7 @@ public class MainWindowViewModel : ViewModelBase
     private Bitmap _imagePlayer1;//картинка 1 игрока
     private readonly Person _player1;
     private readonly Person _player2;
-    private readonly Cell _cellFirstPlayer;//текущая клетка 1 игрока
+    private Cell _cellFirstPlayer;//текущая клетка 1 игрока
     private readonly Cell _cellSecondPlayer;//текущая клетка 2 игрока
     private bool _isPlayer1Turn = true;
     private string _playerTurn = "Ход игрока 1";
@@ -48,6 +48,7 @@ public class MainWindowViewModel : ViewModelBase
         if (_isPlayer1Turn)
         {
             AffectCell(_cellFirstPlayer, _player1);
+            _cellFirstPlayer.Number = _player1.Score;
             GridColumnFirst = _player1.Score - 1;
             Console.WriteLine(_player1.Score);
             if(_cellFirstPlayer.Type == CellType.Normal) _cellFirstPlayer.NormalTurn();
@@ -60,6 +61,7 @@ public class MainWindowViewModel : ViewModelBase
         else
         {
             AffectCell(_cellSecondPlayer, _player2);
+            _cellSecondPlayer.Number = _player2.Score;
             GridColumnSecond = _player2.Score - 1;
             Console.WriteLine(_player2.Score);
             if(_cellSecondPlayer.Type == CellType.Normal) _cellSecondPlayer.NormalTurn();

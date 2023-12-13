@@ -20,8 +20,6 @@
                         <Grid Grid.Column="1">
                                 <TextBlock Margin="10" Text="{Binding PlayerTurn}" HorizontalAlignment="Left" VerticalAlignment="Center"/>
                         </Grid>
-                        
-                        
                 </Grid>
                 
                 <Grid Grid.Row="1"  Background="Gray" RowDefinitions="*, *, * ,*" ZIndex="0">
