@@ -1,4 +1,4 @@
-<Window Foreground="DarkGoldenrod" FontSize="18" FontFamily="Times New Roman" Background="Azure" xmlns="https://github.com/avaloniaui"
+<Window Foreground="WhiteSmoke" FontSize="18" FontFamily="Times New Roman" Background="Azure" xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -14,11 +14,17 @@
         <Grid  RowDefinitions="*, 6*, *">
                 <Grid  Grid.Row="0" ColumnDefinitions="*, *"  Background="DarkOliveGreen">
                         <Grid Grid.Column="0">
+                                <Button></Button>
                                 <TextBlock HorizontalAlignment="Right" VerticalAlignment="Center">
                                         Сейчас ходит:
                                 </TextBlock>
                         </Grid>
                         <Grid Grid.Column="1">
+                                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal">
+                                        <Button Opacity="0.6" Background="GreenYellow" CornerRadius="10" Margin="10" VerticalAlignment="Center" Content="Сохранить"></Button>
+                                        <Button Opacity="0.6" Background="GreenYellow" CornerRadius="10" Margin="10" VerticalAlignment="Center" Content="Начать заново"></Button>
+                                </StackPanel>
+                                
                                 <TextBlock Margin="10" Text="{Binding PlayerTurn}" HorizontalAlignment="Left" VerticalAlignment="Center"/>
                         </Grid>
                 </Grid>
@@ -39,7 +45,7 @@
                         </Grid>
                         <Grid Grid.Row="0" Grid.Column="2" ZIndex="0"> 
                                 
-                                <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
+                                <Border Background="Red" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
                                         <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">3</TextBlock>
                                 </Border>
                         </Grid>
@@ -57,7 +63,7 @@
                         </Grid>
                         <Grid Grid.Row="0" Grid.Column="5" ZIndex="0"> 
                                 
-                                <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
+                                <Border Background="CadetBlue" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
                                         <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">6</TextBlock>
                                 </Border>
                         </Grid>
@@ -87,7 +93,7 @@
                         </Grid>
                         <Grid Grid.Row="1" Grid.Column="5" ZIndex="0"> 
                                 
-                                <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
+                                <Border Background="CornflowerBlue" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
                                         <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">11</TextBlock>
                                 </Border>
                         </Grid>
@@ -135,7 +141,7 @@
                         </Grid>
                         <Grid Grid.Row="2" Grid.Column="2" ZIndex="0"> 
                                 
-                                <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
+                                <Border Background="SaddleBrown" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
                                         <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">19</TextBlock>
                                 </Border>
                         </Grid>
@@ -195,7 +201,7 @@
                         </Grid>
                         <Grid Grid.Row="3" Grid.Column="3" ZIndex="0"> 
                                 
-                                <Border Background="DarkOliveGreen" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
+                                <Border Background="SaddleBrown" Margin="15" BorderBrush="DarkOliveGreen" BorderThickness="2" CornerRadius="5">
                                         <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">29</TextBlock>
                                 </Border>
                         </Grid>
